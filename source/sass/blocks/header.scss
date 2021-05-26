@@ -1,25 +1,41 @@
 .header {
-  display: flex;
+  min-height: 99px;
 }
 
 .header__wrapper {
-  @include wrapper();
+  max-width: $desktop-width;
+  margin: 0 auto;
   display: flex;
   align-items: center;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .header__logo {
+  display: inline-block;
   margin-right: auto;
+  padding: 20px;
+
+  @media (max-width: $tablet-width) {
+    padding: 19px 20px 10px;
+
+    svg {
+      width: 44px;
+      height: auto;
+    }
+  }
 }
 
-.header__nav {
-  min-height: 99px;
-}
+// .header__nav {
+//   border: 1px solid tomato;
+// }
 
 .header__contacts {
   display: flex;
   align-items: center;
-  padding-left: 50px;
+  padding: 0 30px;
   color: inherit;
 
   svg {
@@ -33,5 +49,9 @@
     svg {
       stroke: $orange-hover;
     }
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
