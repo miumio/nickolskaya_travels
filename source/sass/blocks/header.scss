@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+}
+
+.header__wrapper {
+  @include wrapper();
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__nav {
+  min-height: 99px;
+}
+
+.header__contacts {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  color: inherit;
+
+  svg {
+    fill: none;
+    stroke: $black;
+  }
+
+  &:hover {
+    color: $orange-hover;
+
+    svg {
+      stroke: $orange-hover;
+    }
+  }
+}
