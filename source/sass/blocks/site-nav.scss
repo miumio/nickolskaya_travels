@@ -66,6 +66,7 @@
   font-size: 14px;
 
   @media (max-width: $tablet-width) {
+    margin-top: 20% ;
     flex-direction: column;
     font-size: 20px;
     line-height: 140%;
@@ -78,6 +79,7 @@
 .site-nav__item {
   @media (max-width: $tablet-width) {
     position: relative;
+    margin-bottom: 20px;
 
     &::before,
     &::after {
