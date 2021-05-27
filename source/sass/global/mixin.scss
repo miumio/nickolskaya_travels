@@ -6,7 +6,6 @@
 
 @mixin wrapper {
   margin: 0 auto;
-  padding: 0 30px;
   max-width: $desktop-width;
 
   // @media (min-width: @tablet-width) {
