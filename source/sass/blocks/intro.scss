@@ -1,0 +1,97 @@
+.intro {
+  position: relative;
+  margin: 0 auto;
+  min-height: 840px;
+  color: $white;
+  box-sizing: border-box;
+
+  // background-image: url("../img/background-intro.jpg");
+  // background-repeat: no-repeat;
+  // background-position: top -17px center;
+  // background-size: cover;
+  // background-color: $grey;
+
+  // @media (max-width: $tablet-width) {
+  //   padding: 60px 0;
+  //   min-height: 344px;
+  //   text-align: center;
+  //   background-image: url("../img/background-intro-tablet.jpg");
+  //   background-size: 1023px auto;
+  // }
+
+  // @media (max-width: $mobile-width) {
+  //   padding: 80px 0;
+  //   background-image: url("../img/background-intro-mobile.jpg");
+  //   background-size: 767px auto;
+  // }
+}
+
+.intro__wrapper {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  // padding: 0 calc(50vw - 590px);
+  margin-right: 20%;
+  margin-left: auto;
+  outline: 1px solid red;
+  box-sizing: border-box;
+
+  @media (max-width: $desktop-width) {
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin-right: 0;
+    text-align: center;
+    padding: 0 calc(50% - 360px);
+    // padding: 0 20%;
+  }
+}
+
+.intro__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 55px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 220px;
+  }
+}
+
+.intro__text {
+  margin: 0;
+  margin-bottom: 39px;
+  line-height: 170%;
+
+  @media (max-width: $mobile-width) {
+    color: $black-special;
+  }
+}
+
+.intro__button {
+  position: relative;
+  min-width: 340px;
+
+  &::after {
+    @include pseudo;
+    top: 40%;
+    right: 40px;
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 1V15' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15 8L8 15L1 8' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  }
+
+  @media (max-width: $tablet-width) {
+    min-width: 250px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 288px;
+  }
+}

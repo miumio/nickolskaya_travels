@@ -1,3 +1,4 @@
+@import "global/global.scss";
 @import "global/vars";
 @import "global/fonts";
 @import "global/mixin";
@@ -7,3 +8,5 @@
 @import "blocks/site-nav";
 @import "blocks/footer";
 @import "blocks/title";
+@import "blocks/intro";
+@import "blocks/button";
