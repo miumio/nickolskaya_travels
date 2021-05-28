@@ -10,4 +10,6 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  line-height: 28px;
+  color: rgba($black-special, 0.7);
 }

@@ -1,13 +1,14 @@
 .button {
   display: inline-block;
-  padding: 30px 40px;
+  padding: 30px 45px;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
 
   text-decoration: none;
-  color: inherit;
+  color: $white;
   background-color: $orange;
+  border: 0;
   box-sizing: border-box;
 
 }

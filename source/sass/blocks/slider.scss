@@ -1,0 +1,48 @@
+.slider__nav {
+  @include list-style-reset;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 899px;
+  border-bottom: 1px solid rgba($black-special, 0.3);
+}
+
+.slider__link {
+  cursor: pointer;
+  display: block;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.415px;
+  color: rgba($black-special, 0.3);
+
+  &--active {
+    color: $orange;
+  }
+}
+
+.slider__list {
+  @include list-style-reset;
+}
+
+.slider__item {
+  display: flex;
+  align-items: center;
+}
+
+.slider__info {
+  width: 30%;
+}
+
+.slider__text {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.slider__reviews {
+  margin-left: auto;
+  padding: 100px 30px;
+  width: 30%;
+}

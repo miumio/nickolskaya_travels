@@ -1,0 +1,17 @@
+.reviews__author {
+  display: flex;
+  align-items: center;
+}
+
+.reviews__userpic {
+  margin-right: 15px;
+  width: 37px;
+}
+
+.reviews__name {
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 500;
+  color: $black-special;
+}

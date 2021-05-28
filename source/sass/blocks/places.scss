@@ -48,7 +48,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  outline: 1px solid tomato;
 
   @media (max-width: $tablet-width) {
     padding: 0 7%;
@@ -62,7 +61,6 @@
 .places__item {
   position: relative;
   width: 29.99%;
-  // margin-right: 5%;
   margin-bottom: 100px;
   box-sizing: border-box;
 
@@ -86,33 +84,6 @@
   @media (max-width: $mobile-width) {
     width: 100%;
   }
-
-  // &:last-child {
-  //   margin-left: 30px;
-  //   margin-right: 0;
-  // }
-
-  // &:nth-child(3n) {
-  //   margin-right: 0;
-  // }
-
-  // @media (min-width: $mobile-width) and (max-width: $tablet-width) {
-  //   width: 47.5%;
-
-  //   &:nth-child(2n) {
-  //     margin-right: 0;
-  //   }
-
-  //   &:nth-child(3n) {
-  //     margin-right: 5%;
-  //   }
-
-  //   &:last-child {
-  //     margin-left: 0;
-  //   }
-  // }
-
-
 }
 
 .places__spot {
