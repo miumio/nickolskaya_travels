@@ -1,0 +1,135 @@
+.places {
+  @media (max-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.places__wrapper {
+  @include wrapper;
+}
+
+.places__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 64px;
+  padding-right: 60%;
+
+  &::after {
+    @include pseudo;
+    bottom: -23px;
+    left: 0;
+    width: 229px;
+    height: 4px;
+    background-color: $orange;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 30%;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.places__text {
+  margin: 0;
+  margin-bottom: 56px;
+  padding-right: 70%;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 30%;
+  }
+}
+
+.places__list {
+  @include list-style-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  outline: 1px solid tomato;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 7%;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.places__item {
+  position: relative;
+  width: 29.99%;
+  // margin-right: 5%;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+
+  &:nth-last-child(2) {
+    margin-left: auto;
+  }
+
+  &:last-child {
+    margin-right: auto;
+    margin-left: 120px;
+
+    @media (max-width: $tablet-width) {
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 45%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+
+  // &:last-child {
+  //   margin-left: 30px;
+  //   margin-right: 0;
+  // }
+
+  // &:nth-child(3n) {
+  //   margin-right: 0;
+  // }
+
+  // @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  //   width: 47.5%;
+
+  //   &:nth-child(2n) {
+  //     margin-right: 0;
+  //   }
+
+  //   &:nth-child(3n) {
+  //     margin-right: 5%;
+  //   }
+
+  //   &:last-child {
+  //     margin-left: 0;
+  //   }
+  // }
+
+
+}
+
+.places__spot {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  min-width: 215px;
+  padding: 16px 0;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+  text-align: center;
+  color: $black-special;
+  background-color: $white;
+  transform: translateX(-50%);
+}
+
+.places__figure {
+  margin: 0;
+}

@@ -41,7 +41,7 @@
         <picture>
           <source media="(max-width: 1023px)" srcset="img/background-intro-tablet@1x.jpg 1x">
           <source media="(max-width: 767px)" srcset="img/background-intro-mobile@1x.jpg 1x">
-          <img src="img/background-intro@1x.jpg" alt="observation deck">
+          <img src="img/background-intro@1x.jpg" width="1920" height="auto" alt="observation deck">
         </picture>
         <div class="intro__wrapper">
           <h1 class="intro__title title">Путешествие по Европе</h1>
@@ -52,11 +52,69 @@
           <a href="#" class="intro__button button">Смотреть тур</a>
         </div>
       </section>
+      <section class="places">
+        <div class="places__wrapper">
+          <h2 class="places__title title">Mеста посещения</h2>
+          <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+          <ul class="places__list">
+            <li class="places__item">
+              <a href="#" class="places__link">
+                <figure class="places__figure">
+                  <picture>
+                    <img src="img/greece.jpg" width="350" height="430" alt="Греция">
+                  </picture>
+                  <figcaption class="places__spot">Греция</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="places__item">
+              <a href="#">
+                <figure class="places__figure">
+                  <picture>
+                    <img src="img/albania.jpg" width="350" height="430" alt="Греция">
+                  </picture>
+                  <figcaption class="places__spot">Албания</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="places__item">
+              <a href="#">
+                <figure class="places__figure">
+                  <picture>
+                    <img src="img/makedonia.jpg" width="350" height="430" alt="Греция">
+                  </picture>
+                  <figcaption class="places__spot">Македония</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="places__item">
+              <a href="#">
+                <figure class="places__figure">
+                  <picture>
+                    <img src="img/montenegro.jpg" width="350" height="430" alt="Греция">
+                  </picture>
+                  <figcaption class="places__spot">Черногория</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="places__item">
+              <a href="#">
+                <figure class="places__figure">
+                  <picture>
+                    <img src="img/croatia.jpg" width="350" height="430" alt="Греция">
+                  </picture>
+                  <figcaption class="places__spot">Хорватия</figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
         <section class="footer__column">
-          <h4 class="footer__title title">Следующие путешествия</h4>
+          <h4 class="footer__title title title--small">Следующие путешествия</h4>
           <ul class="footer__list">
             <li>
               <a href="#" class="footer__link">Марсель</a>
@@ -110,7 +168,7 @@
           </ul>
         </section>
         <section class="footer__column">
-          <h4 class="footer__title title">Наши контакты</h4>
+          <h4 class="footer__title title title--small">Наши контакты</h4>
           <a href="mailto:puteshestviemechta@gmail.ru" class="footer__contacts">
             <svg width="26" height="20">
               <use xlink:href="img/sprite_auto.svg#icon-email"></use>
@@ -128,7 +186,7 @@
           </a>
         </section>
         <section class="footer__column">
-          <h4 class="footer__title title">Корпоративные путешествия</h4>
+          <h4 class="footer__title title title--small">Корпоративные путешествия</h4>
           <p class="footer__text">
             Также вы можете заказать индивидуальное путешествие под вашу
             компанию. Подобные туры очень сближают компанию, помогают

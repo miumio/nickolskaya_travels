@@ -1,7 +1,6 @@
 .intro {
   position: relative;
-  margin: 0 auto;
-  min-height: 840px;
+  margin-bottom: 199px;
   color: $white;
   box-sizing: border-box;
 
@@ -33,10 +32,9 @@
   // padding: 0 calc(50vw - 590px);
   margin-right: 20%;
   margin-left: auto;
-  outline: 1px solid red;
   box-sizing: border-box;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width) {
     top: 10%;
     left: 0;
     right: 0;
@@ -52,7 +50,7 @@
   margin-bottom: 30px;
   font-size: 55px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width) {
     font-size: 30px;
     margin-bottom: 15px;
   }
