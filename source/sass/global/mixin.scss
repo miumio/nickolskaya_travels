@@ -8,15 +8,15 @@
 //   margin: 0 auto;
 //   max-width: $desktop-width;
 
-  // @media (min-width: @tablet-width) {
-  //   padding-left: 50px;
-  //   padding-right: 50px;
-  //   max-width: 668px;
-  // }
+// @media (min-width: @tablet-width) {
+//   padding-left: 50px;
+//   padding-right: 50px;
+//   max-width: 668px;
+// }
 
-  // @media (min-width: @desktop-width) {
-  //   max-width: 1050px;
-  // }
+// @media (min-width: @desktop-width) {
+//   max-width: 1050px;
+// }
 // }
 
 // @mixin pseudo ($display: block, $pos: absolute, $content: "") {
@@ -28,6 +28,16 @@
 @mixin pseudo {
   content: "";
   position: absolute;
+}
+
+@mixin line($bottom, $width, $height, $color) {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: $bottom;
+  width: $width;
+  height: $height;
+  background-color: $color;
 }
 
 @mixin wrapper {
@@ -45,7 +55,6 @@
     min-width: $min-width;
     box-sizing: border-box;
   }
-
 }
 
 // @mixin padding {

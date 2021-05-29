@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Путешествие по Европе</title>
+
+    <!-- Pixel Glass -->
+      <style>
+        HTML {
+          background-repeat: no-repeat;
+          background-position:  50% 0;
+          /* Mobile layout by default */
+          background-image: url( "img/1920.png" );
+        }
+        /* Tablet */
+        @media ( max-width: 768px ) {
+          HTML {
+            /* Tablet layout */
+            background-image: url( "img/768.png" );
+          }
+        }
+        /* Desktop */
+        @media ( max-width: 320px ) {
+          HTML {
+            /* Desktop layout */
+            background-image: url( "img/320.png" );
+          }
+        }
+      </style>
+<link rel="stylesheet" href="pixel-glass/styles.css">
+<script src="/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
+
+
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -229,7 +258,7 @@
             </ul>
           </section>
           <section class="places__price price">
-            <div class="price__column">
+            <div class="price__inner">
               <h2 class="price__title title">Цены</h2>
               <p class="price__text">
                 Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей.
@@ -238,27 +267,28 @@
               <h4 class="price__subtitle">Свяжитесь с нами</h4>
               <p class="price__phone">+7 (499) 784-684-46</p>
             </div>
-            <section class="price__pricing-plan pricing-plan pricing-plan--complex">
-              <h3 class="pricing-plan__title">Комплексный <span>$1999</span></h3>
-              <p class="pricing-plan__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-              <ul class="pricing-plan__list">
-                <li class="pricing-plan__item">Разработанный маршрут с гидом группы</li>
-                <li class="pricing-plan__item">Перелет, трансфер и проживание в отелях</li>
-                <li class="pricing-plan__item">Завтраки, ужины в отелях и ланчи на природе</li>
-                <li class="pricing-plan__item">Экскурсии по удивительно красивым местам Европы</li>
+            <section class="price__tariffs tariffs tariffs--complex">
+              <h3 class="tariffs__title">Комплексный <span>$1999</span></h3>
+              <p class="tariffs__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              <ul class="tariffs__list">
+                <li class="tariffs__item">Разработанный маршрут с гидом группы</li>
+                <li class="tariffs__item">Перелет, трансфер и проживание в отелях</li>
+                <li class="tariffs__item">Завтраки, ужины в отелях и ланчи на природе</li>
+                <li class="tariffs__item">Экскурсии по удивительно красивым местам Европы</li>
               </ul>
-              <button class="pricing-plan__button" type="button">Купить тур сейчас</button>
+              <button class="tariffs__button button" type="button">Купить тур сейчас</button>
             </section>
-            <section class="price__pricing-plan pricing-plan">
-              <h3 class="pricing-plan__title">Экономный <span>$1399</span></h3>
-              <p class="pricing-plan__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-              <ul class="pricing-plan__list">
-                <li class="pricing-plan__item">Перелет и трансфер</li>
-                <li class="pricing-plan__item">Проживание в хостелах при отелях</li>
-                <li class="pricing-plan__item">Только завтраки в отелях</li>
-                <li class="pricing-plan__item">Экскурсии по удивительно красивым местам Европы</li>
+            <section class="price__tariffs tariffs">
+              <h3 class="tariffs__title">Экономный <span>$1399</span></h3>
+              <p class="tariffs__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              <ul class="tariffs__list">
+                <li class="tariffs__item">Разработанный маршрут с гидом группы</li>
+                <li class="tariffs__item">Перелет и трансфер</li>
+                <li class="tariffs__item">Проживание в хостелах при отелях</li>
+                <li class="tariffs__item">Только завтраки в отелях</li>
+                <li class="tariffs__item">Экскурсии по удивительно красивым местам Европы</li>
               </ul>
-              <button class="pricing-plan__button" type="button">Купить тур сейчас</button>
+              <button class="tariffs__button button" type="button">Купить тур сейчас</button>
             </section>
           </section>
         </div>

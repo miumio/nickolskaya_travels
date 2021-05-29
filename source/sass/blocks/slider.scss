@@ -94,8 +94,19 @@
 }
 
 .slider__title {
+  position: relative;
   margin: 0;
   margin-bottom: 53px;
+
+  &::after {
+    @include line (-20px, 175px, 4px, $orange);
+  }
+
+  @media (max-width: $tablet-width) {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .slider__text {

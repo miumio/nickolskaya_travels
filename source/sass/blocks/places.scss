@@ -19,12 +19,7 @@
   padding-right: 60%;
 
   &::after {
-    @include pseudo;
-    bottom: -23px;
-    left: 0;
-    width: 229px;
-    height: 4px;
-    background-color: $orange;
+    @include line (-20px, 228px, 4px, $orange);
   }
 
   @media (max-width: $tablet-width) {
@@ -108,3 +103,7 @@
 .places__figure {
   margin: 0;
 }
+
+// .places__price {
+//   width: 30%;
+// }
