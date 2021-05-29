@@ -25,15 +25,26 @@
 
 .slider__list {
   @include list-style-reset;
+
+  margin-bottom: 241px;
 }
 
 .slider__item {
   display: flex;
   align-items: center;
+
+  &--greece {
+    background: url("../img/greece430x596@1x.jpg") no-repeat 400px;
+  }
 }
 
 .slider__info {
   width: 30%;
+}
+
+.slider__title {
+  margin: 0;
+  margin-bottom: 53px;
 }
 
 .slider__text {
