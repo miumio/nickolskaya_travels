@@ -25,21 +25,35 @@
 
 .slider__list {
   @include list-style-reset;
-
   margin-bottom: 241px;
 }
 
 .slider__item {
   display: flex;
   align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
 
   &--greece {
-    background: url("../img/greece430x596@1x.jpg") no-repeat 400px;
+    background-image: url("../img/greece430x596@1x.jpg");
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/greece-bg-tablet.jpg");
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    background-position: bottom center;
   }
 }
 
 .slider__info {
   width: 30%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .slider__title {
@@ -52,8 +66,23 @@
   margin-bottom: 50px;
 }
 
+.slider__button {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 110px;
+  }
+}
+
 .slider__reviews {
   margin-left: auto;
-  padding: 100px 30px;
   width: 30%;
+
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 90%;
+  }
 }
