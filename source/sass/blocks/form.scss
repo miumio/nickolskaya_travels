@@ -1,0 +1,16 @@
+.form__inner {
+  @include list-style-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30PX ;
+  width: 100%;
+}
+
+.form__input {
+  flex: 0 1 30%;
+  min-width: 40%;
+  height: 50px;
+  padding-left: 30px;
+  border: 1px solid rgba($black-special, 0.3);
+}

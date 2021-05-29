@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Путешествие по Европе</title>
 
-    <!-- Pixel Glass -->
+    <!-- Pixel Glass
       <style>
         HTML {
           background-repeat: no-repeat;
@@ -29,9 +29,9 @@
           }
         }
       </style>
-<link rel="stylesheet" href="pixel-glass/styles.css">
+<link rel="stylesheet" href="pixel-glass/styles.css" >
 <script src="/pixel-glass/script.js"></script>
-<!-- // Pixel Glass -->
+// Pixel Glass -->
 
 
     <link rel="stylesheet" href="css/style.min.css">
@@ -298,24 +298,18 @@
         </div>
       </section>
       <section class="feedback">
+        <img src="img/feedback-bg-desktop.jpg" width="844" height="455">
+
         <div class="feedback__wrapper">
           <h3 class="feedback__title title">У вас остались вопросы?</h3>
           <p class="feedback__text">
             Оставьте свой номер или e-mail и мы свяжемся с Вами
           </p>
           <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="POST">
-            <ul class="form__inner">
-              <li class="form__item">
-                <label class="form__label"> +7
-                  <input class="form__input" id="phone" name="user-phone" type="tel" placeholder="Введите 10 цифр номера" required="">
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label"> E-mail
-                  <input class="form__input" id="email" name="email" type="email">
-                </label>
-              </li>
-            </ul>
+            <div class="form__inner">
+                <input class="form__input" id="phone" name="user-phone" type="tel" placeholder="Введите 10 цифр номера" required="">
+                <input class="form__input" id="email" name="email" type="email" placeholder="E-mail">
+            </div>
             <button class="form__button button" type="submit">Отправить</button>
           </form>
         </div>

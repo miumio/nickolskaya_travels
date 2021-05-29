@@ -1,8 +1,6 @@
-// .places {
-//   @media (max-width: $tablet-width) {
-//     text-align: center;
-//   }
-// }
+.places {
+margin-bottom: 138px;
+}
 
 .places__wrapper {
   @include wrapper;
