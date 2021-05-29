@@ -35,11 +35,48 @@
   background-position: center;
 
   &--greece {
-    background-image: url("../img/greece430x596@1x.jpg");
+    background-image: url("../img/greece-bg-desktop.jpg");
 
     @media (max-width: $tablet-width) {
       background-image: url("../img/greece-bg-tablet.jpg");
     }
+  }
+
+  &--albania {
+    background-image: url("../img/albania-bg-desktop.jpg");
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/albania-bg-tablet.jpg");
+    }
+  }
+
+  &--makedonia {
+    background-image: url("../img/makedonia-bg-desktop.jpg");
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/makedonia-bg-tablet.jpg");
+    }
+  }
+
+
+  &--montenegro {
+    background-image: url("../img/montenegro-bg-desktop.jpg");
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/montenegro-bg-tablet.jpg");
+    }
+  }
+
+  &--croatia {
+    background-image: url("../img/croatia-bg-desktop.jpg");
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/croatia-bg-tablet.jpg");
+    }
+  }
+
+  &--hidden {
+    display: none;
   }
 
   @media (max-width: $tablet-width) {
