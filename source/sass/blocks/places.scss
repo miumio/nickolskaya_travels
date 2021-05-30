@@ -1,5 +1,5 @@
 .places {
-margin-bottom: 138px;
+  margin-bottom: 138px;
 }
 
 .places__wrapper {
@@ -83,6 +83,42 @@ margin-bottom: 138px;
   }
 }
 
+.places__link {
+  &:hover {
+    &::before {
+      @include pseudo;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba($black, 0.5);
+      z-index: 10;
+    }
+
+    &::after {
+      position: absolute;
+      content: "смотреть подробнее";
+      top: 40%;
+      left: 10%;
+      right: 10%;
+      bottom: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $white;
+      border: 1px solid $white;
+      z-index: 20;
+    }
+  }
+}
+
+
 .places__spot {
   position: absolute;
   bottom: 0;
@@ -101,6 +137,7 @@ margin-bottom: 138px;
 .places__figure {
   margin: 0;
 }
+
 
 // .places__price {
 //   width: 30%;

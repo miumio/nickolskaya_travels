@@ -3,13 +3,30 @@
   flex-direction: column;
   color: $black-special;
   padding: 30px;
-  border: 1px solid $black-special;
+  box-shadow: 0 0 0 1px rgba($black-special, 0.3);
   border-radius: 6px;
   box-sizing: border-box;
   min-height: 672px;
 
-  &--complex {
-    border: 4px solid $orange;
+  &:hover {
+    box-shadow: 0 0 0 3px $orange;
+
+    .tariffs__title {
+      color: $orange;
+    }
+
+    .tariffs__item {
+      &::after,
+      &::before {
+        background-color: $black;
+      }
+    }
+
+    .tariffs__text {
+      &::after {
+        background-color: rgba($orange, 0.5);
+      }
+    }
   }
 }
 
@@ -67,21 +84,4 @@
 
 .tariffs__button {
   margin-top: auto;
-}
-
-.tariffs--complex .tariffs__title {
-  color: $orange;
-}
-
-.tariffs--complex .tariffs__item {
-  &::after,
-  &::before {
-    background-color: $black;
-  }
-}
-
-.tariffs--complex .tariffs__text {
-  &::after {
-    background-color: rgba($orange, 0.5);
-  }
 }
