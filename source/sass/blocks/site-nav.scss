@@ -13,27 +13,29 @@
 .site-nav__toggler {
   display: none;
 
-  @media (max-width: $tablet-width) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 72px;
-    height: 50px;
-    border: none;
-    background-color: $orange;
-    cursor: pointer;
-
-    &::before {
-      @include pseudo;
-      top: 15px;
-      left: 25px;
-      width: 25px;
-      height: 2px;
-      background-color: $white;
-      box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+  &--show {
+    @media (max-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 72px;
+      height: 50px;
+      border: none;
+      background-color: $orange;
+      cursor: pointer;
     }
   }
+}
+
+.site-nav--closed .site-nav__toggler::after {
+  @include pseudo;
+  top: 15px;
+  left: 25px;
+  width: 25px;
+  height: 2px;
+  background-color: $white;
+  box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
 }
 
 .site-nav--opened .site-nav__toggler {
@@ -58,6 +60,17 @@
     transform: rotate(-45deg);
   }
 }
+
+@media (max-width: $tablet-width) {
+  .site-nav--closed .site-nav__list {
+    display: none;
+  }
+
+  .site-nav--nojs .site-nav__toggler {
+    display: none;
+  }
+}
+
 
 .site-nav__list {
   @include list-style-reset;

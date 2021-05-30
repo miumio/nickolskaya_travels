@@ -29,12 +29,14 @@
 }
 
 .slider__item {
-  display: flex;
+  display: none;
+  margin-bottom: 70px;
   align-items: center;
   background-repeat: no-repeat;
   background-position: center;
 
   &--greece {
+    display: flex;
     background-image: url("../img/greece-bg-desktop.jpg");
 
     @media (max-width: $tablet-width) {
@@ -58,7 +60,6 @@
     }
   }
 
-
   &--montenegro {
     background-image: url("../img/montenegro-bg-desktop.jpg");
 
@@ -73,10 +74,6 @@
     @media (max-width: $tablet-width) {
       background-image: url("../img/croatia-bg-tablet.jpg");
     }
-  }
-
-  &--hidden {
-    display: none;
   }
 
   @media (max-width: $tablet-width) {
