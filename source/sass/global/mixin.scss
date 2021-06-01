@@ -43,13 +43,13 @@
 @mixin wrapper {
   margin: 0 auto;
   max-width: $desktop-width;
+  width: 90%;
 
   // @media (max-width: $mobile-width) {
   //   min-width: $min-width;
   // }
 
   @media (max-width: $tablet-width) {
-    width: 90%;
   }
 }
 

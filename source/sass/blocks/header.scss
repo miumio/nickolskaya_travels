@@ -9,7 +9,6 @@
   @include wrapper;
   display: flex;
   align-items: center;
-  outline: 1px solid red;
 
   @media (max-width: $tablet-width) {
     display: block;

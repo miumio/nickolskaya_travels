@@ -4,17 +4,12 @@
 
 .places__wrapper {
   @include wrapper;
-
-  @media (max-width: $tablet-width) {
-    padding: 0;
-  }
 }
 
 .places__title {
   position: relative;
   margin: 0;
   margin-bottom: 64px;
-  padding-right: 60%;
 
   &::after {
     @include line (-33px, 228px, 4px, $orange);
@@ -31,12 +26,9 @@
 
 .places__text {
   margin: 0;
-  margin-bottom: 56px;
-  padding-right: 70%;
   letter-spacing: -0.466667px;
 
-
-  @media (max-width: $tablet-width) {
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-width) {
     padding: 0 30%;
   }
 }
@@ -46,22 +38,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
 
-  @media (max-width: $tablet-width) {
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-width) {
     padding: 0 7%;
-  }
-
-  @media (max-width: $mobile-width) {
-    display: block;
   }
 }
 
 .places__item {
   position: relative;
-  width: 29.99%;
   margin-bottom: 100px;
-  box-sizing: border-box;
+  width: 30%;
+  min-width: 288px;
 
   &:nth-last-child(2) {
     margin-left: auto;
@@ -70,63 +57,32 @@
   &:last-child {
     margin-right: auto;
     margin-left: 120px;
+  }
 
-    @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+    width: 45%;
+
+    &:last-child {
       margin: 0 auto;
     }
   }
 
-  @media (max-width: $tablet-width) {
-    width: 45%;
-  }
-
   @media (max-width: $mobile-width) {
     width: 100%;
-  }
-}
 
-.places__link {
-  &:hover {
-    &::before {
-      @include pseudo;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba($black, 0.5);
-      z-index: 10;
-    }
-
-    &::after {
-      position: absolute;
-      content: "смотреть подробнее";
-      top: 40%;
-      left: 10%;
-      right: 10%;
-      bottom: 40%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 17px;
-      text-align: center;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: $white;
-      border: 1px solid $white;
-      z-index: 20;
+    a {
+      width: 100%;
     }
   }
+
 }
 
-.places__slider {
-  margin-top: -22px;
-  margin-bottom: 30px;
+.places__image {
+  display: block;
 }
 
-
-.places__spot {
+.places__spotname {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -141,9 +97,107 @@
   transform: translateX(-50%);
 }
 
-.places__figure {
-  margin: 0;
+// .places__list {
+//   @include list-style-reset;
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   align-items: flex-start;
+
+//   @media (max-width: $tablet-width) {
+//     padding: 0 7%;
+//   }
+
+//   @media (max-width: $mobile-width) {
+//     display: block;
+//   }
+// }
+
+// .places__item {
+//   position: relative;
+//   width: 29.99%;
+//   margin-bottom: 100px;
+//   box-sizing: border-box;
+//   outline: 1px solid tomato;
+
+//   &:nth-last-child(2) {
+//     margin-left: auto;
+//   }
+
+//   &:last-child {
+//     margin-right: auto;
+//     margin-left: 120px;
+
+//     @media (max-width: $tablet-width) {
+//       margin: 0 auto;
+//     }
+//   }
+
+//   @media (max-width: $tablet-width) {
+//     width: 45%;
+//   }
+
+//   @media (max-width: $mobile-width) {
+//     width: 100%;
+//   }
+// }
+
+// .places__link {
+//   display: block;
+//   width: 100%;
+//   height: auto;
+//   background-color: 1px solid gray;
+
+//   &:hover {
+//     &::before {
+//       @include pseudo;
+//       top: 0;
+//       right: 0;
+//       bottom: 0;
+//       left: 0;
+//       background-color: rgba($black, 0.5);
+//       z-index: 10;
+//     }
+
+//     &::after {
+//       position: absolute;
+//       content: "смотреть подробнее";
+//       top: 40%;
+//       left: 10%;
+//       right: 10%;
+//       bottom: 40%;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       font-weight: 500;
+//       font-size: 14px;
+//       line-height: 17px;
+//       text-align: center;
+//       letter-spacing: 2px;
+//       text-transform: uppercase;
+//       color: $white;
+//       border: 1px solid $white;
+//       z-index: 20;
+//     }
+//   }
+// }
+
+// .places__image {
+//   width: 100%;
+//   height: auto;
+//   background-color: $black;
+// }
+
+.places__slider {
+  margin-top: -22px;
+  margin-bottom: 30px;
 }
+
+// .places__figure {
+//   position: relative;
+//   margin: 0;
+//   padding: 0;
+// }
 
 
 // .places__price {

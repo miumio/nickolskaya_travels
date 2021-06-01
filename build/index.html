@@ -8,7 +8,7 @@
     <!-- <link rel="preload" href="../fonts/montserrat-v15-latin_cyrillic-regular.woff2" as="font"> -->
     <title>Путешествие по Европе</title>
 
-        <!--Pixel Glass -->
+        <!--Pixel Glass
           <style>
             HTML {
               background-repeat: no-repeat;
@@ -31,9 +31,9 @@
               }
             }
           </style>
-    <link rel="stylesheet" href="pixel-glass/styles.css">
+    <link rel="stylesheet" href="pixel-glass/styles.css" >
     <script src="/pixel-glass/script.js"></script>
-   <!-- // Pixel Glass -->
+   Pixel Glass -->
 
 
     <link rel="stylesheet" href="css/style.min.css">
@@ -80,37 +80,90 @@
           <div>
         </div>
       </div></div></section>
-                  <!--
 
       <section class="places">
         <div class="places__wrapper">
           <h2 class="places__title title">Mеста посещения</h2>
           <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+
           <ul class="places__list">
             <li class="places__item">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-tablet@1x.webp 1x, img/greece-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/greece-desktop@1x.webp 1x, img/greece-desktop@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/greece-tablet@1x.jpg 1x, img/greece-tablet@2x.jpg 2x">
+                  <img src="img/greece-desktop@1x.jpg" srcset="img/greece-desktop@2x.jpg 2x" class="places__image" width="350" height="430" alt="Греция">
+                </picture>
+                <span class="places__spotname">Греция</span>
+              </a>
+            </li>
+            <li class="places__item">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/albania-tablet@1x.webp 1x, img/albania-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/albania-desktop@1x.webp 1x, img/albania-desktop@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/albania-tablet@1x.jpg 1x, img/albania-tablet@2x.jpg 2x">
+                  <img src="img/albania-desktop@1x.jpg" srcset="img/albania-desktop@2x.jpg 2x" class="places__image" width="350" height="430" alt="Албания">
+                </picture>
+                <span class="places__spotname">Албания</span>
+              </a>
+            </li>
+            <li class="places__item">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/makedonia-tablet@1x.webp 1x, img/makedonia-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/makedonia-desktop@1x.webp 1x, img/makedonia-desktop@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/makedonia-tablet@1x.jpg 1x, img/makedonia-tablet@2x.jpg 2x">
+                  <img src="img/makedonia-desktop@1x.jpg" srcset="img/albania-desktop@2x.jpg 2x" class="places__image" width="350" height="430" alt="Македония">
+                </picture>
+                <span class="places__spotname">Македония</span>
+              </a>
+            </li>
+            <li class="places__item">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/montenegro-tablet@1x.webp 1x, img/montenegro-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/montenegro-desktop@1x.webp 1x, img/montenegro-desktop@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/montenegro-tablet@1x.jpg 1x, img/montenegro-tablet@2x.jpg 2x">
+                  <img src="img/montenegro-desktop@1x.jpg" srcset="img/montenegro-desktop@2x.jpg 2x" class="places__image" width="350" height="430" alt="Черногория">
+                </picture>
+                <span class="places__spotname">Черногория</span>
+              </a>
+            </li>
+            <li class="places__item">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/croatia-tablet@1x.webp 1x, img/croatia-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/croatia-desktop@1x.webp 1x, img/croatia-desktop@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/croatia-tablet@1x.jpg 1x, img/croatia-tablet@2x.jpg 2x">
+                  <img src="img/croatia-desktop@1x.jpg" srcset="img/croatia-desktop@2x.jpg 2x" class="places__image" width="350" height="430" alt="Хорватия">
+                </picture>
+                <span class="places__spotname">Хорватия</span>
+              </a>
+            </li>
+          </ul>
+          <!-- <ul class="places__list">
+            <li class="places__item">
               <a href="#greece" class="places__link" onclick="currentSlide(1)">
-                <figure class="places__figure">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-tablet@1x.webp 1x, img/greece-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/greece@1x.webp 1x, img/greece@2x.webp 2x">
-                    <source media="(max-width: 1023px)" srcset="img/greece-tablet@1x.jpg 1x, img/greece-tablet@2x.jpg 2x">
-                    <img src="img/greece@1x.jpg" srcset="img/greece@2x.jpg 2x" width="350" height="430" alt="Греция">
-                  </picture>
-                  <figcaption class="places__spot">Греция</figcaption>
-                </figure>
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-tablet@1x.webp 1x, img/greece-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/greece@1x.webp 1x, img/greece@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/greece-tablet@1x.jpg 1x, img/greece-tablet@2x.jpg 2x">
+                  <img src="img/greece@1x.jpg" srcset="img/greece@2x.jpg 2x" class="places__image" width="350" height="430" alt="Греция">
+                </picture>
+                <span class="places__spot">Греция</span>
               </a>
             </li>
             <li class="places__item">
               <a href="#albania" class="places__link" onclick="currentSlide(2)">
-                <figure class="places__figure">
                   <picture>
                     <source type="image/webp" media="(max-width: 1023px)" srcset="img/albania-tablet@1x.webp 1x, img/albania-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/albania@1x.webp 1x, img/albania@2x.webp 2x">
                     <source media="(max-width: 1023px)" srcset="img/albania-tablet@1x.jpg 1x, img/albania-tablet@2x.jpg 2x">
-                    <img src="img/albania@1x.jpg" srcset="img/albania@2x.jpg 2x" width="350" height="430" alt="Албания">
+                    <img src="img/albania@1x.jpg" srcset="img/albania@2x.jpg 2x" class="places__image" width="350" height="430" alt="Албания">
                   </picture>
-                  <figcaption class="places__spot">Албания</figcaption>
-                </figure>
+                  <span class="places__spot">Албания</span>
               </a>
             </li>
             <li class="places__item">
@@ -152,8 +205,9 @@
                 </figure>
               </a>
             </li>
-          </ul>
+          </ul> -->
           <section class="places__slider slider">
+            <!--
             <ul class="slider__nav"  draggable="true">
               <li><a class="slider__link slider__link--active" onclick="currentSlide(1)" id="greece">Греция</a></li>
               <li><a class="slider__link" onclick="currentSlide(2)" id="albania">Албания</a></li>
@@ -358,6 +412,8 @@
               </ul>
               <button class="tariffs__button button" type="button">Купить тур сейчас</button>
             </section>
+                              <!--
+
             <section class="price__tariffs tariffs">
               <h3 class="tariffs__title">Экономный <span>$1399</span></h3>
               <p class="tariffs__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
@@ -481,5 +537,5 @@
     </footer>
     -->
     <script src="js/script.js"></script>
-  </main></body>
+  </section></div></section></main></body>
 </html>
