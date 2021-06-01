@@ -145,17 +145,22 @@
           </ul>
           <section class="places__slider slider">
 
-
-
-
-<!-- <div class="swiper-container tabs-buttons">
-  <ul class="swiper-wrapper">
-    <li class="swiper-slide active-tab">Греция</li>
-    <li class="swiper-slide">Албания</li>
-    <li class="swiper-slide">Македония</li>
-    <li class="swiper-slide">Черногория</li>
-    <li class="swiper-slide">Хорватия</li>
-  </div> -->
+          <div class="swiper__container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a class="swiper-slide__link swiper-slide__link--active" onclick="currentSlide(1)" id="greece">Греция</a>
+              </li>
+              <li class="swiper-slide">
+                <a class="swiper-slide__link" onclick="currentSlide(2)" id="albania">Албания</a>
+              </li>
+              <li class="swiper-slide">
+                <a class="swiper-slide__link" onclick="currentSlide(3)" id="makedonia">Македония</a>
+            </li>
+              <li class="swiper-slide">
+                <a class="swiper-slide__link" onclick="currentSlide(4)" id="montenegro">Черногория</a></li>
+              <li class="swiper-slide">
+                <a class="swiper-slide__link" onclick="currentSlide(5)" id="croatia">Хорватия</a></li>
+            </ul></div>
 
 
 
@@ -183,14 +188,17 @@
                   </p>
                   <button class="slider__button button" type="button">Купить тур сейчас</button>
                 </div>
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/greece-bg-mobile@1x.webp 1x, img/greece-bg-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-bg-tablet@1x.webp 1x, img/greece-bg-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/greece-bg-desktop@1x.webp 1x, img/greece-bg-desktop@2x.webp 2x">
-                  <source media="(max-width: 767px)" srcset="img/greece-bg-mobile@1x.jpg 1x, img/greece-bg-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1023px)" srcset="img/greece-bg-tablet@1x.jpg 1x, img/greece-bg-tablet@2x.jpg 2x">
-                  <img src="img/greece-bg-desktop@1x.jpg" srcset="img/greece-bg-desktop@2x.jpg 2x" width="350" height="430" alt="Пейзаж Греции">
-                </picture>
+                <div class="slider__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/greece-bg-mobile@1x.webp 1x, img/greece-bg-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-bg-tablet@1x.webp 1x, img/greece-bg-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/greece-bg-desktop@1x.webp 1x, img/greece-bg-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/greece-bg-mobile@1x.jpg 1x, img/greece-bg-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="img/greece-bg-tablet@1x.jpg 1x, img/greece-bg-tablet@2x.jpg 2x">
+                    <img src="img/greece-bg-desktop@1x.jpg" srcset="img/greece-bg-desktop@2x.jpg 2x" width="350" height="430" alt="Пейзаж Греции">
+                  </picture>
+                </div>
+
                 <blockquote class="slider__reviews reviews">
                   <h4 class="reviews__title title">Отзывы</h4>
                   <p class="reviews__text">

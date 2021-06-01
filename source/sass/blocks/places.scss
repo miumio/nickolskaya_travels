@@ -4,6 +4,10 @@
 
 .places__wrapper {
   @include wrapper;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .places__title {

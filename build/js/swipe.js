@@ -25,41 +25,43 @@ import './swiper-bundle.js';
 
 'use strict';
 
-function Tabs() {
-  var bindAll = function() {
-    var menuElements = document.querySelectorAll('[data-tab]');
-    for(var i = 0; i < menuElements.length ; i++) {
-      menuElements[i].addEventListener('click', change, false);
-    }
-  }
+// function Tabs() {
+//   var bindAll = function() {
+//     var menuElements = document.querySelectorAll('[data-tab]');
+//     for(var i = 0; i < menuElements.length ; i++) {
+//       menuElements[i].addEventListener('click', change, false);
+//     }
+//   }
 
-  var clear = function() {
-    var menuElements = document.querySelectorAll('[data-tab]');
-    for(var i = 0; i < menuElements.length ; i++) {
-      menuElements[i].classList.remove('active');
-      var id = menuElements[i].getAttribute('data-tab');
-      document.getElementById(id).classList.remove('active');
-    }
-  }
+//   var clear = function() {
+//     var menuElements = document.querySelectorAll('[data-tab]');
+//     for(var i = 0; i < menuElements.length ; i++) {
+//       menuElements[i].classList.remove('active');
+//       var id = menuElements[i].getAttribute('data-tab');
+//       document.getElementById(id).classList.remove('active');
+//     }
+//   }
 
-  var change = function(e) {
-    clear();
-    e.target.classList.add('active');
-    var id = e.currentTarget.getAttribute('data-tab');
-    document.getElementById(id).classList.add('active');
-  }
+//   var change = function(e) {
+//     clear();
+//     e.target.classList.add('active');
+//     var id = e.currentTarget.getAttribute('data-tab');
+//     document.getElementById(id).classList.add('active');
+//   }
 
-  bindAll();
-}
+//   bindAll();
+// }
 
-var connectTabs = new Tabs();
+// var connectTabs = new Tabs();
 
-var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      freeMode: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
+// var swiper = new Swiper('.swiper-container', {
+//       slidesPerView: 3,
+//       spaceBetween: 30,
+//       freeMode: true,
+//       pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//       },
+//     });
+
+new Swiper('.swiper__container');

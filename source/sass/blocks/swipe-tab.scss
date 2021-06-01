@@ -6,10 +6,19 @@
 // .tabs-content .swiper-slide {
 //   padding: 1rem 2rem;
 // }
-.swiper-container {
+.swiper__container {
+  @include wrapper;
   position: relative;
-  width: 100%;
+  width: auto;
   overflow: hidden;
+
+  @media (max-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 300px;
+  }
 }
 .swiper-wrapper {
   @include list-style-reset;
@@ -24,7 +33,20 @@
   cursor: pointer;
   border-bottom: 2px solid transparent;
 }
-.active-tab {
-  opacity: 1;
-  color: $orange;
+
+.swiper-slide__link {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: rgba($black-special, 0.3);
+
+  &--active {
+    color: $orange;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 100px;
+  }
 }
