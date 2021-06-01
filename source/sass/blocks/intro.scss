@@ -1,4 +1,5 @@
 .intro {
+  position: relative;
   margin-bottom: 199px;
   padding-top: 185px;
   min-height: 860px;
@@ -20,7 +21,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 80px 0;
+    padding-top: 81px;
     background-image: url("../img/background-intro-mobile@1x.jpg");
     background-size: 767px auto;
   }
@@ -28,29 +29,38 @@
 
 .intro__wrapper {
   @include wrapper;
+
+  outline: 1px solid red;
 }
 
 .intro__inner {
   margin-left: auto;
-  padding-right: 7%;
+  padding-right: 15px;
   width: 40%;
   box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
 }
 
 .intro__title {
   margin: 0;
   margin-bottom: 28px;
   color: inherit;
+  letter-spacing: -1.10667px;
 
   @media (max-width: $tablet-width) {
-    font-size: 30px;
     margin-bottom: 15px;
+    letter-spacing: 0;
   }
-
   @media (max-width: $mobile-width) {
+    margin: 0 auto;
+    width: 294px;
     font-size: 24px;
     line-height: 150%;
-    margin-bottom: 220px;
   }
 }
 
@@ -60,6 +70,10 @@
   letter-spacing: -0.466667px;
 
   @media (max-width: $mobile-width) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 15px;
     color: $black-special;
   }
 }
@@ -78,10 +92,13 @@
   }
 
   @media (max-width: $tablet-width) {
-    min-width: 250px;
+    text-align: left;
   }
 
   @media (max-width: $mobile-width) {
-    min-width: 288px;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

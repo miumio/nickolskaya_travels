@@ -1,12 +1,15 @@
 .header {
+  position: relative;
   color: $black;
   font-weight: 500;
+  text-align: left;
 }
 
 .header__wrapper {
   @include wrapper;
   display: flex;
   align-items: center;
+  outline: 1px solid red;
 
   @media (max-width: $tablet-width) {
     display: block;
@@ -15,13 +18,12 @@
 
 .header__logo {
   display: block;
+  margin-left: -14px;
   margin-right: auto;
-  margin-left: -20px;
-  padding: 38px 21px 30px;
-  outline: 1px solid green;
+  padding: 38px 21px 30px 0px;
 
   @media (max-width: $tablet-width) {
-    padding: 19px 20px 10px;
+    padding: 14px 20px 8px;
 
     svg {
       width: 44px;

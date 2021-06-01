@@ -18,4 +18,14 @@
   &:hover {
     background-color: $orange-hover;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    width: 250px;
+  }
+
 }

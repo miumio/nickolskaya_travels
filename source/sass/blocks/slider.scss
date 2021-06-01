@@ -3,8 +3,9 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 899px;
+  width: 900px;
   border-bottom: 1px solid rgba($black-special, 0.3);
+  overflow: hidden;
 }
 
 .slider__link {

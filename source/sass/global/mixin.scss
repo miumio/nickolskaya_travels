@@ -43,16 +43,13 @@
 @mixin wrapper {
   margin: 0 auto;
   max-width: $desktop-width;
-  // padding: 0 calc(50% - 590px);
-  // outline: 1px solid red;
 
-  // @media (max-width: $tablet-width) {
-  //   padding: 0;
+  // @media (max-width: $mobile-width) {
+  //   min-width: $min-width;
   // }
 
-  @media (max-width: $mobile-width) {
-    min-width: $min-width;
-    box-sizing: border-box;
+  @media (max-width: $tablet-width) {
+    width: 90%;
   }
 }
 
