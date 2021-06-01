@@ -2,36 +2,38 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <!-- <link rel="preload" href="../fonts/montserrat-v15-latin_cyrillic-regular.woff2" as="font"> -->
     <title>Путешествие по Европе</title>
 
-    <!-- Pixel Glass
-      <style>
-        HTML {
-          background-repeat: no-repeat;
-          background-position:  50% 0;
-          /* Mobile layout by default */
-          background-image: url( "img/1920.png" );
-        }
-        /* Tablet */
-        @media ( max-width: 768px ) {
-          HTML {
-            /* Tablet layout */
-            background-image: url( "img/768.png" );
-          }
-        }
-        /* Desktop */
-        @media ( max-width: 320px ) {
-          HTML {
-            /* Desktop layout */
-            background-image: url( "img/320.png" );
-          }
-        }
-      </style>
-<link rel="stylesheet" href="pixel-glass/styles.css" >
-<script src="/pixel-glass/script.js"></script>
-// Pixel Glass -->
+        <!--Pixel Glass
+          <style>
+            HTML {
+              background-repeat: no-repeat;
+              background-position:  50% 0;
+              /* Mobile layout by default */
+              background-image: url( "img/1920.png" );
+            }
+            /* Tablet */
+            @media ( max-width: 768px ) {
+              HTML {
+                /* Tablet layout */
+                background-image: url( "img/768.png" );
+              }
+            }
+            /* Desktop */
+            @media ( max-width: 320px ) {
+              HTML {
+                /* Desktop layout */
+                background-image: url( "img/320.png" );
+              }
+            }
+          </style>
+    <link rel="stylesheet" href="pixel-glass/styles.css" >
+    <script src="/pixel-glass/script.js"></script>
+    // Pixel Glass -->
 
 
     <link rel="stylesheet" href="css/style.min.css"/>
@@ -61,24 +63,21 @@
           <svg width="30" height="30">
             <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
           </svg>
-          +7 (499) 784-684-46
+          +7 (499) -784-684-46
         </a>
       </div>
     </header>
     <main>
       <section class="intro">
-        <picture>
-          <source media="(max-width: 1023px)" srcset="img/background-intro-tablet@1x.jpg 1x">
-          <source media="(max-width: 767px)" srcset="img/background-intro-mobile@1x.jpg 1x">
-          <img src="img/background-intro@1x.jpg" width="1920" alt="observation deck">
-        </picture>
         <div class="intro__wrapper">
-          <h1 class="intro__title title">Путешествие по Европе</h1>
-          <p class="intro__text">
-            В этом туре вы откроете для себя Европу в новом свете. Вас ждет:
-            море, горы, а также потрясающая красота природы.
-          </p>
-          <a href="#greece" class="intro__button button">Смотреть тур</a>
+          <div class="intro__inner">
+            <h1 class="intro__title title">Путешествие по Европе</h1>
+            <p class="intro__text">
+              В этом туре вы откроете для себя Европу в новом свете. Вас ждет:
+              море, горы, а также потрясающая красота природы.
+            </p>
+            <a href="#greece" class="intro__button button">Смотреть тур</a>
+          </div>
         </div>
       </section>
       <section class="places">
@@ -90,7 +89,10 @@
               <a href="#greece" class="places__link" onclick="currentSlide(1)">
                 <figure class="places__figure">
                   <picture>
-                    <img src="img/greece.jpg" width="350" height="430" alt="Греция">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-tablet@1x.webp 1x, img/greece-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/greece@1x.webp 1x, img/greece@2x.webp 2x">
+                    <source media="(max-width: 1023px)" srcset="img/greece-tablet@1x.jpg 1x, img/greece-tablet@2x.jpg 2x">
+                    <img src="img/greece@1x.jpg" srcset="img/greece@2x.jpg 2x" width="350" height="430" alt="Греция">
                   </picture>
                   <figcaption class="places__spot">Греция</figcaption>
                 </figure>
@@ -100,7 +102,10 @@
               <a href="#albania" class="places__link" onclick="currentSlide(2)">
                 <figure class="places__figure">
                   <picture>
-                    <img src="img/albania.jpg" width="350" height="430" alt="Греция">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/albania-tablet@1x.webp 1x, img/albania-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/albania@1x.webp 1x, img/albania@2x.webp 2x">
+                    <source media="(max-width: 1023px)" srcset="img/albania-tablet@1x.jpg 1x, img/albania-tablet@2x.jpg 2x">
+                    <img src="img/albania@1x.jpg" srcset="img/albania@2x.jpg 2x" width="350" height="430" alt="Албания">
                   </picture>
                   <figcaption class="places__spot">Албания</figcaption>
                 </figure>
@@ -110,7 +115,10 @@
               <a href="#makedonia" class="places__link" onclick="currentSlide(3)">
                 <figure class="places__figure">
                   <picture>
-                    <img src="img/makedonia.jpg" width="350" height="430" alt="Греция">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/makedonia-tablet@1x.webp 1x, img/makedonia-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/makedonia@1x.webp 1x, img/makedonia@2x.webp 2x">
+                    <source media="(max-width: 1023px)" srcset="img/makedonia-tablet@1x.jpg 1x, img/makedonia-tablet@2x.jpg 2x">
+                    <img src="img/makedonia@1x.jpg" srcset="img/albania@2x.jpg 2x" width="350" height="430" alt="Македония">
                   </picture>
                   <figcaption class="places__spot">Македония</figcaption>
                 </figure>
@@ -120,7 +128,10 @@
               <a href="#montenegro" class="places__link" onclick="currentSlide(4)">
                 <figure class="places__figure">
                   <picture>
-                    <img src="img/montenegro.jpg" width="350" height="430" alt="Греция">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/montenegro-tablet@1x.webp 1x, img/montenegro-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/montenegro@1x.webp 1x, img/montenegro@2x.webp 2x">
+                    <source media="(max-width: 1023px)" srcset="img/montenegro-tablet@1x.jpg 1x, img/montenegro-tablet@2x.jpg 2x">
+                    <img src="img/montenegro@1x.jpg" srcset="img/albania@2x.jpg 2x" width="350" height="430" alt="Черногория">
                   </picture>
                   <figcaption class="places__spot">Черногория</figcaption>
                 </figure>
@@ -130,7 +141,10 @@
               <a href="#croatia" class="places__link" onclick="currentSlide(5)">
                 <figure class="places__figure">
                   <picture>
-                    <img src="img/croatia.jpg" width="350" height="430" alt="Греция">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/croatia-tablet@1x.webp 1x, img/croatia-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/croatia@1x.webp 1x, img/croatia@2x.webp 2x">
+                    <source media="(max-width: 1023px)" srcset="img/croatia-tablet@1x.jpg 1x, img/croatia-tablet@2x.jpg 2x">
+                    <img src="img/croatia@1x.jpg" srcset="img/croatia@2x.jpg 2x" width="350" height="430" alt="Хорватия">
                   </picture>
                   <figcaption class="places__spot">Хорватия</figcaption>
                 </figure>
@@ -138,7 +152,7 @@
             </li>
           </ul>
           <section class="places__slider slider">
-            <ul class="slider__nav">
+            <ul class="slider__nav"  draggable="true">
               <li><a class="slider__link slider__link--active" onclick="currentSlide(1)" id="greece">Греция</a></li>
               <li><a class="slider__link" onclick="currentSlide(2)" id="albania">Албания</a></li>
               <li><a class="slider__link" onclick="currentSlide(3)" id="makedonia">Македония</a></li>
@@ -146,7 +160,7 @@
               <li><a class="slider__link" onclick="currentSlide(5)" id="croatia">Хорватия</a></li>
             </ul>
             <ul class="slider__list">
-              <li class="slider__item slider__item--greece">
+              <li class="slider__item">
                 <div class="slider__info">
                   <h3 class="slider__title title">Греция</h3>
                   <p class="slider__text">
@@ -159,6 +173,14 @@
                   </p>
                   <button class="slider__button button" type="button">Купить тур сейчас</button>
                 </div>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/greece-bg-mobile@1x.webp 1x, img/greece-bg-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-bg-tablet@1x.webp 1x, img/greece-bg-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/greece-bg-desktop@1x.webp 1x, img/greece-bg-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/greece-bg-mobile@1x.jpg 1x, img/greece-bg-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/greece-bg-tablet@1x.jpg 1x, img/greece-bg-tablet@2x.jpg 2x">
+                  <img src="img/greece-bg-desktop@1x.jpg" srcset="img/greece-bg-desktop@2x.jpg 2x" width="350" height="430" alt="Пейзаж Греции">
+                </picture>
                 <blockquote class="slider__reviews reviews">
                   <p class="reviews__text">
                     Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же
@@ -166,12 +188,15 @@
                     Ощущение такое, как будто стоишь на краю света!
                   </p>
                   <cite class="reviews__author">
-                    <img src="img/greece-cite-userpic.jpg" class="reviews__userpic" width="37" height="38" alt="Фото Влады Голициной">
+                    <picture>
+                      <source type="image/webp" srcset="img/greece-cite-userpic@1x.webp 1x, img/greece-cite-userpic@2x.webp 2x">
+                      <img src="img/greece-cite-userpic@1x.jpg" srcset="img/greece-cite-userpic@2x.jpg 2x" class="reviews__userpic" width="37" height="38" alt="Фото Влады Голициной">
+                    </picture>
                     <span class="reviews__name">Влада Голицина</span>
                   </cite>
                 </blockquote>
               </li>
-              <li class="slider__item slider__item--albania">
+              <li class="slider__item">
                 <div class="slider__info">
                   <h3 class="slider__title title">Албания</h3>
                   <p class="slider__text">
@@ -182,18 +207,29 @@
                   </p>
                   <button class="slider__button button" type="button">Купить тур сейчас</button>
                 </div>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/albania-bg-mobile@1x.webp 1x, img/albania-bg-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/albania-bg-tablet@1x.webp 1x, img/albania-bg-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/albania-bg-desktop@1x.webp 1x, img/albania-bg-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/albania-bg-mobile@1x.jpg 1x, img/albania-bg-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/albania-bg-tablet@1x.jpg 1x, img/albania-bg-tablet@2x.jpg 2x">
+                  <img src="img/albania-bg-desktop@1x.jpg" srcset="img/albania-bg-desktop@2x.jpg 2x" width="350" height="430" alt="Пейзаж Албании">
+                </picture>
                 <blockquote class="slider__reviews reviews">
                   <p class="reviews__text">
                     Замечательный курорт, обязательно стоит посетить.
                     В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)
                   </p>
                   <cite class="reviews__author">
-                    <img src="img/albania-cite-userpic.jpg" class="reviews__userpic" width="37" height="38" alt="Фото Влады Голициной">
+                    <picture>
+                      <source type="image/webp" srcset="img/albania-cite-userpic@1x.webp 1x, img/albania-cite-userpic@2x.webp 2x">
+                      <img src="img/albania-cite-userpic@1x.jpg" srcset="img/albania-cite-userpic@2x.jpg 2x" class="reviews__userpic" width="37" height="38" alt="Фото Влады Голициной">
+                    </picture>
                     <span class="reviews__name">Маришка</span>
                   </cite>
                 </blockquote>
               </li>
-              <li class="slider__item slider__item--makedonia">
+              <li class="slider__item">
                 <div class="slider__info">
                   <h3 class="slider__title title">Македония</h3>
                   <p class="slider__text">
@@ -203,6 +239,14 @@
                   </p>
                   <button class="slider__button button" type="button">Купить тур сейчас</button>
                 </div>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/makedonia-bg-mobile@1x.webp 1x, img/makedonia-bg-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/makedonia-bg-tablet@1x.webp 1x, img/makedonia-bg-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/makedonia-bg-desktop@1x.webp 1x, img/makedonia-bg-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/makedonia-bg-mobile@1x.jpg 1x, img/makedonia-bg-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/makedonia-bg-tablet@1x.jpg 1x, img/makedonia-bg-tablet@2x.jpg 2x">
+                  <img src="img/makedonia-bg-desktop@1x.jpg" srcset="img/makedonia-bg-desktop@2x.jpg 2x" width="350" height="430" alt="Пейзаж Македонии">
+                </picture>
                 <blockquote class="slider__reviews reviews">
                   <p class="reviews__text">
                     Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень
@@ -210,12 +254,15 @@
                     особенно после долгого пути в гору.
                   </p>
                   <cite class="reviews__author">
-                    <img src="img/makedonia-cite-userpic.jpg" class="reviews__userpic" width="37" height="38" alt="Фото Влады Голициной">
+                    <picture>
+                      <source type="image/webp" srcset="img/makedonia-cite-userpic@1x.webp 1x, img/makedonia-cite-userpic@2x.webp 2x">
+                      <img src="img/makedonia-cite-userpic@1x.jpg" srcset="img//makedonia-cite-userpic@2x.jpg" class="reviews__userpic" width="37" height="38" alt="Фото Влады Голициной">
+                    </picture>
                     <span class="reviews__name">Михаил Кузьмин</span>
                   </cite>
                 </blockquote>
               </li>
-              <li class="slider__item slider__item--montenegro">
+              <li class="slider__item">
                 <div class="slider__info">
                   <h3 class="slider__title title">Черногория</h3>
                   <p class="slider__text">
@@ -224,17 +271,28 @@
                   </p>
                   <button class="slider__button button" type="button">Купить тур сейчас</button>
                 </div>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/montenegro-bg-mobile@1x.webp 1x, img/montenegro-bg-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/montenegro-bg-tablet@1x.webp 1x, img/montenegro-bg-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/montenegro-bg-desktop@1x.webp 1x, img/montenegro-bg-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/montenegro-bg-mobile@1x.jpg 1x, img/montenegro-bg-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/montenegro-bg-tablet@1x.jpg 1x, img/montenegro-bg-tablet@2x.jpg 2x">
+                  <img src="img/montenegro-bg-desktop@1x.jpg" srcset="img/montenegro-bg-desktop@2x.jpg 2x" width="350" height="430" alt="Пейзаж Черногории">
+                </picture>
                 <blockquote class="slider__reviews reviews">
                   <p class="reviews__text">
                     Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую
                   </p>
                   <cite class="reviews__author">
-                    <img src="img/montenegro-cite-userpic.jpg" class="reviews__userpic" width="37" height="38" alt="Фото Влады Голициной">
+                    <picture>
+                      <source type="image/webp" srcset="img/montenegro-cite-userpic@1x.webp 1x, img/montenegro-cite-userpic@2x.webp 2x">
+                      <img src="img/montenegro-cite-userpic@1x.jpg" srcset="img/montenegro-cite-userpic@2x.jpg 2x" class="reviews__userpic" width="37" height="38" alt="Фото Влады Голициной">
+                    </picture>
                     <span class="reviews__name">Анастасия Мей</span>
                   </cite>
                 </blockquote>
               </li>
-              <li class="slider__item slider__item--croatia">
+              <li class="slider__item">
                 <div class="slider__info">
                   <h3 class="slider__title title">Хорватия</h3>
                   <p class="slider__text">
@@ -244,13 +302,24 @@
                   </p>
                   <button class="slider__button button" type="button">Купить тур сейчас</button>
                 </div>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/croatia-bg-mobile@1x.webp 1x, img/croatia-bg-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/croatia-bg-tablet@1x.webp 1x, img/croatia-bg-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/croatia-bg-desktop@1x.webp 1x, img/croatia-bg-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/croatia-bg-mobile@1x.jpg 1x, img/croatia-bg-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/croatia-bg-tablet@1x.jpg 1x, img/croatia-bg-tablet@2x.jpg 2x">
+                  <img src="img/croatia-bg-desktop@1x.jpg" srcset="img/croatia-bg-desktop@2x.jpg 2x" width="350" height="430" alt="Пейзаж Хорватии">
+                </picture>
                 <blockquote class="slider__reviews reviews">
                   <p class="reviews__text">
                     Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями,
                     мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)
                   </p>
                   <cite class="reviews__author">
-                    <img src="img/croatia-cite-userpic.jpg" class="reviews__userpic" width="37" height="38" alt="Фото Влады Голициной">
+                    <picture>
+                      <source type="image/webp" srcset="img/croatia-cite-userpic@1x.webp 1x, img/croatia-cite-userpic@2x.webp 2x">
+                      <img src="img/croatia-cite-userpic@1x.jpg" srcset="img/croatia-cite-userpic@2x.jpg 2x" class="reviews__userpic" width="37" height="38" alt="Фото Влады Голициной">
+                    </picture>
                     <span class="reviews__name">Владимир Мулицин</span>
                   </cite>
                 </blockquote>
@@ -298,7 +367,10 @@
         </div>
       </section>
       <section class="feedback">
-        <img src="img/feedback-bg-desktop.jpg" width="844" height="455">
+        <picture>
+          <source type="image/webp" srcset="img/feedback-bg-desktop@1x.webp 1x, img/feedback-bg-desktop@2x.webp 2x">
+          <img src="img/feedback-bg-desktop@1x.jpg" srcset="img/feedback-bg-desktop@2x.jpg 2x" width="844" height="455" alt="Фоновое изображение">
+        </picture>
 
         <div class="feedback__wrapper">
           <h3 class="feedback__title title">У вас остались вопросы?</h3>

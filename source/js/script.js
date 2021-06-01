@@ -47,5 +47,5 @@ function showSlides(n) {
   links[slideIndex - 1].className += ' slider__link--active';
 }
 
-plusSlides(1);
-currentSlide(1);
+plusSlides(0);
+currentSlide(0);

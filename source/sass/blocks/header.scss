@@ -1,10 +1,10 @@
 .header {
-  min-height: 99px;
+  color: $black;
+  font-weight: 500;
 }
 
 .header__wrapper {
-  max-width: $desktop-width;
-  margin: 0 auto;
+  @include wrapper;
   display: flex;
   align-items: center;
 
@@ -14,10 +14,11 @@
 }
 
 .header__logo {
-  display: inline-block;
+  display: block;
   margin-right: auto;
   margin-left: -20px;
-  padding: 20px;
+  padding: 38px 21px 30px;
+  outline: 1px solid green;
 
   @media (max-width: $tablet-width) {
     padding: 19px 20px 10px;
@@ -30,6 +31,7 @@
 }
 
 .header__nav {
+  padding-right: 18px;
   @media (max-width: $tablet-width) {
     z-index: 10;
     background-color: $white;
@@ -39,10 +41,12 @@
 .header__contacts {
   display: flex;
   align-items: center;
-  padding: 0 30px;
+  padding: 19px 14px 14px;
+  font-size: 18px;
   color: inherit;
 
   svg {
+    margin-right: 9px;
     fill: none;
     stroke: $black;
   }

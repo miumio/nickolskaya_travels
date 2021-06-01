@@ -1,17 +1,16 @@
 .slider__nav {
   @include list-style-reset;
-  margin-bottom: 80px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  max-width: 899px;
+  width: 899px;
   border-bottom: 1px solid rgba($black-special, 0.3);
 }
 
 .slider__link {
   cursor: pointer;
   display: block;
-  padding: 20px 0;
+  padding: 16px 0;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -25,65 +24,18 @@
 
 .slider__list {
   @include list-style-reset;
-  margin-bottom: 241px;
+  margin-top: 79px;
 }
 
 .slider__item {
   display: none;
-  margin-bottom: 70px;
   align-items: center;
   background-repeat: no-repeat;
   background-position: center;
-
-  &--greece {
-    display: flex;
-    background-image: url("../img/greece-bg-desktop.jpg");
-
-    @media (max-width: $tablet-width) {
-      background-image: url("../img/greece-bg-tablet.jpg");
-    }
-  }
-
-  &--albania {
-    background-image: url("../img/albania-bg-desktop.jpg");
-
-    @media (max-width: $tablet-width) {
-      background-image: url("../img/albania-bg-tablet.jpg");
-    }
-  }
-
-  &--makedonia {
-    background-image: url("../img/makedonia-bg-desktop.jpg");
-
-    @media (max-width: $tablet-width) {
-      background-image: url("../img/makedonia-bg-tablet.jpg");
-    }
-  }
-
-  &--montenegro {
-    background-image: url("../img/montenegro-bg-desktop.jpg");
-
-    @media (max-width: $tablet-width) {
-      background-image: url("../img/montenegro-bg-tablet.jpg");
-    }
-  }
-
-  &--croatia {
-    background-image: url("../img/croatia-bg-desktop.jpg");
-
-    @media (max-width: $tablet-width) {
-      background-image: url("../img/croatia-bg-tablet.jpg");
-    }
-  }
-
-  @media (max-width: $tablet-width) {
-    flex-direction: column;
-    background-position: bottom center;
-  }
 }
 
 .slider__info {
-  width: 30%;
+  width: 31%;
 
   @media (max-width: $tablet-width) {
     width: 100%;
@@ -92,8 +44,8 @@
 
 .slider__title {
   position: relative;
-  margin: 0;
-  margin-bottom: 53px;
+  // margin: 0;
+  margin: 15px 0 53px;
 
   &::after {
     @include line (-20px, 175px, 4px, $orange);
@@ -109,17 +61,21 @@
 .slider__text {
   margin: 0;
   margin-bottom: 50px;
+  letter-spacing: -0.466667px;
 }
 
 .slider__button {
+  width: 250px;
+  margin-bottom: 30px;
   @media (max-width: $tablet-width) {
     margin-bottom: 110px;
   }
 }
 
 .slider__reviews {
+  margin: 0;
   margin-left: auto;
-  width: 30%;
+  width: 382px;
 
 
   @media (max-width: $tablet-width) {

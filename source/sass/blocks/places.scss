@@ -17,7 +17,7 @@
   padding-right: 60%;
 
   &::after {
-    @include line (-20px, 228px, 4px, $orange);
+    @include line (-33px, 228px, 4px, $orange);
   }
 
   @media (max-width: $tablet-width) {
@@ -33,6 +33,8 @@
   margin: 0;
   margin-bottom: 56px;
   padding-right: 70%;
+  letter-spacing: -0.466667px;
+
 
   @media (max-width: $tablet-width) {
     padding: 0 30%;
@@ -116,6 +118,11 @@
       z-index: 20;
     }
   }
+}
+
+.places__slider {
+  margin-top: -22px;
+  margin-bottom: 30px;
 }
 
 

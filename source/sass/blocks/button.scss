@@ -1,9 +1,12 @@
 .button {
-  display: inline-block;
-  padding: 30px 45px;
+  display: block;
+  padding: 30px 40px;
+  font-weight: 700;
   font-size: 12px;
+  line-height: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
+
 
   text-decoration: none;
   color: $white;
