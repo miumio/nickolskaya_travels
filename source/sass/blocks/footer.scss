@@ -30,13 +30,14 @@
   padding: 0 10px;
   border-right: 1px solid rgba($grey, 0.5);
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width) {
     width: 50%;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
     text-align: center;
+    border-right: 0;
 
     &:not(:first-child) {
       border-top: 1px solid rgba($grey, 0.5);
@@ -45,6 +46,9 @@
 
   &:nth-child(3n+2) {
     padding-left: 90px;
+    @media (max-width: $tablet-width) {
+      border-right: 0;
+    }
 
     @media (max-width: $mobile-width) {
       padding-left: 10px;
@@ -56,7 +60,7 @@
     padding-left: 50px;
     border-right: none;
 
-    @media (max-width: $desktop-width) {
+    @media (max-width: $tablet-width) {
       padding-left: 10px;
       margin-top: 30px;
       width: 100%;
