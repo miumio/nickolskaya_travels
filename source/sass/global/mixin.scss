@@ -4,27 +4,6 @@
   list-style: none;
 }
 
-// @mixin wrapper {
-//   margin: 0 auto;
-//   max-width: $desktop-width;
-
-// @media (min-width: @tablet-width) {
-//   padding-left: 50px;
-//   padding-right: 50px;
-//   max-width: 668px;
-// }
-
-// @media (min-width: @desktop-width) {
-//   max-width: 1050px;
-// }
-// }
-
-// @mixin pseudo ($display: block, $pos: absolute, $content: "") {
-//   content: $content;
-//   display: $display;
-//   position: $pos;
-// }
-
 @mixin pseudo {
   content: "";
   position: absolute;
@@ -44,27 +23,4 @@
   margin: 0 auto;
   max-width: $desktop-width;
   width: 90%;
-
-  // @media (max-width: $mobile-width) {
-  //   min-width: $min-width;
-  // }
-
-  @media (max-width: $tablet-width) {
-  }
 }
-
-// @mixin padding {
-//   padding: 0 calc(50% - 586px);
-
-//   @media (max-width: $desktop-width) {
-//     padding: 0 calc(50% - 500px);
-//   }
-
-//   @media (max-width: $tablet-width) {
-//     padding: 0 calc(50% - 360px);
-//   }
-
-//   @media (max-width: $mobile-width) {
-//     padding: 0 calc(50% - 270px);
-//   }
-// }
