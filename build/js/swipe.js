@@ -64,4 +64,4 @@ import './swiper-bundle.js';
 //       },
 //     });
 
-new Swiper('.swiper__container');
+new Swiper('.swiper-container');

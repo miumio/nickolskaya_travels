@@ -1,4 +1,4 @@
-.slider__tabs {
+.swiper__tabs {
   @include wrapper;
   position: relative;
   width: auto;
@@ -9,16 +9,8 @@
   }
 }
 
-.slider__tabs-list {
+.swiper__tabs-list {
   @include list-style-reset;
-  // display: flex;
-  // flex-wrap: nowrap;
-  // border-bottom: 1px solid rgba($black-special, 0.3);
-
-  // @media (max-width: $tablet-width) {
-  //   width: 900px;
-  //   overflow: hidden;
-  // }
 
   position: relative;
   width: 1900px;
@@ -28,11 +20,11 @@
   overflow: hidden;
 }
 
-.slider__list {
+.swiper__list {
   @include list-style-reset;
   }
 
-.slider__item {
+.swiper__item {
   position: relative;
   display: flex;
   align-items: center;
@@ -42,7 +34,7 @@
   }
 }
 
-.slider__info {
+.swiper__info {
   width: 34.45%;
   margin-right: 6%;
   padding-top: 14px;
@@ -55,7 +47,7 @@
   }
 }
 
-.slider__title {
+.swiper__title {
   position: relative;
   // margin: 0;
   margin: 0 0px 50px;
@@ -73,7 +65,7 @@
   }
 }
 
-.slider__img {
+.swiper__img {
   display: block;
   margin-top: -18px;
   width: 36.7207%;
@@ -84,8 +76,7 @@
 
 }
 
-
-.slider__text {
+.swiper__text {
   margin: 0;
   margin-bottom: 50px;
   padding-right: 30px;
@@ -96,7 +87,7 @@
   }
 }
 
-.slider__button {
+.swiper__button {
   width: 250px;
   margin-bottom: 15px;
   letter-spacing: 2.5px;
@@ -105,13 +96,12 @@
   }
 }
 
-.slider__reviews {
+.swiper__reviews {
   position: absolute;
   right: 0;
   margin: 0;
   width: 382px;
   z-index: 10;
-
 
   @media (max-width: $tablet-width) {
     position: absolute;
@@ -124,5 +114,54 @@
 
   @media (max-width: $mobile-width) {
     width: 90%;
+  }
+}
+
+.swiper-container {
+  position: relative;
+  width: 77%;
+  margin-bottom: 82px;
+  overflow: hidden;
+
+  @media (max-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 300px;
+  }
+}
+.swiper-wrapper {
+  @include list-style-reset;
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid rgba($black-special, 0.3);
+}
+
+.swiper-slide {
+  width: auto;
+  height: auto;
+  padding-top: 7px;
+  padding-right: 100px;
+  padding-bottom: 8px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.swiper-slide__link {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.415px;
+  text-align: center;
+  color: rgba($black-special, 0.3);
+
+  &--active {
+    color: $orange;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 100px;
   }
 }
