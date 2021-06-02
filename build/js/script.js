@@ -41,10 +41,10 @@ function showSlides(n) {
     slides[i].style.display = 'none';
   }
   for (i = 0; i < links.length; i++) {
-    links[i].className = links[i].className.replace(' swiper-slide__link--active', '');
+    links[i].className = links[i].className.replace(' swiper-slide--active', '');
   }
   slides[slideIndex - 1].style.display = 'flex';
-  links[slideIndex - 1].className += ' swiper-slide__link--active';
+  links[slideIndex - 1].className += ' swiper-slide--active';
 }
 
 plusSlides(1);

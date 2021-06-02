@@ -2,6 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+
 
   @media (max-width: $tablet-width) {
     justify-content: space-evenly;
@@ -16,7 +18,7 @@
   // margin-left: auto;
   order: 3;
   flex: 1 1 200px;
-  max-width: 300px;
+  max-width: 286px;
   // width: 299px;
   // width: 20%;
   // max-width: 300px;
@@ -31,7 +33,7 @@
 }
 
 .price__tariffs {
-  width: 32%;
+  width: 30%;
   min-width: 370px;
 
   @media (max-width: $tablet-width) {
@@ -45,7 +47,7 @@
 
   @media (max-width: $mobile-width) {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 30px;
   }
 }
 

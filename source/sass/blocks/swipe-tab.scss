@@ -7,9 +7,9 @@
 //   padding: 1rem 2rem;
 // }
 .swiper__container {
-  @include wrapper;
   position: relative;
-  width: auto;
+  width: 77%;
+  margin-bottom: 82px;
   overflow: hidden;
 
   @media (max-width: $tablet-width) {
@@ -23,13 +23,15 @@
 .swiper-wrapper {
   @include list-style-reset;
   display: flex;
-  justify-content: space-between;
   position: relative;
+  border-bottom: 1px solid rgba($black-special, 0.3);
 }
 .swiper-slide {
   width: auto;
   height: auto;
-  padding: 1rem 5rem;
+  padding-top: 7px;
+  padding-right: 100px;
+  padding-bottom: 8px;
   cursor: pointer;
   border-bottom: 2px solid transparent;
 }
@@ -39,6 +41,7 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
+  letter-spacing: -0.415px;
   text-align: center;
   color: rgba($black-special, 0.3);
 

@@ -1,5 +1,10 @@
 .places {
   margin-bottom: 138px;
+
+  background-image: url("../img/places-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 1444px auto;
+  background-position: bottom center;
 }
 
 .places__wrapper {
@@ -14,6 +19,8 @@
   position: relative;
   margin: 0;
   margin-bottom: 64px;
+  width: 30%;
+  letter-spacing: -1.245px;
 
   &::after {
     @include line (-33px, 228px, 4px, $orange);
@@ -21,19 +28,27 @@
 
   @media (max-width: $tablet-width) {
     padding: 0 30%;
+    width: auto;
 
     &::after {
       display: none;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 15px;
+  }
 }
 
 .places__text {
   margin: 0;
+  margin-bottom: 55px;
+  width: 30%;
   letter-spacing: -0.466667px;
 
-  @media (min-width: $tablet-min-width) and (max-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
     padding: 0 30%;
+    width: auto;
   }
 }
 
@@ -43,7 +58,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media (min-width: $tablet-min-width) and (max-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 98px ;
     padding: 0 7%;
   }
 }
@@ -82,10 +98,6 @@
 
 }
 
-.places__image {
-  display: block;
-}
-
 .places__spotname {
   position: absolute;
   bottom: 0;
@@ -101,109 +113,11 @@
   transform: translateX(-50%);
 }
 
-// .places__list {
-//   @include list-style-reset;
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-between;
-//   align-items: flex-start;
-
-//   @media (max-width: $tablet-width) {
-//     padding: 0 7%;
-//   }
-
-//   @media (max-width: $mobile-width) {
-//     display: block;
-//   }
-// }
-
-// .places__item {
-//   position: relative;
-//   width: 29.99%;
-//   margin-bottom: 100px;
-//   box-sizing: border-box;
-//   outline: 1px solid tomato;
-
-//   &:nth-last-child(2) {
-//     margin-left: auto;
-//   }
-
-//   &:last-child {
-//     margin-right: auto;
-//     margin-left: 120px;
-
-//     @media (max-width: $tablet-width) {
-//       margin: 0 auto;
-//     }
-//   }
-
-//   @media (max-width: $tablet-width) {
-//     width: 45%;
-//   }
-
-//   @media (max-width: $mobile-width) {
-//     width: 100%;
-//   }
-// }
-
-// .places__link {
-//   display: block;
-//   width: 100%;
-//   height: auto;
-//   background-color: 1px solid gray;
-
-//   &:hover {
-//     &::before {
-//       @include pseudo;
-//       top: 0;
-//       right: 0;
-//       bottom: 0;
-//       left: 0;
-//       background-color: rgba($black, 0.5);
-//       z-index: 10;
-//     }
-
-//     &::after {
-//       position: absolute;
-//       content: "смотреть подробнее";
-//       top: 40%;
-//       left: 10%;
-//       right: 10%;
-//       bottom: 40%;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       font-weight: 500;
-//       font-size: 14px;
-//       line-height: 17px;
-//       text-align: center;
-//       letter-spacing: 2px;
-//       text-transform: uppercase;
-//       color: $white;
-//       border: 1px solid $white;
-//       z-index: 20;
-//     }
-//   }
-// }
-
-// .places__image {
-//   width: 100%;
-//   height: auto;
-//   background-color: $black;
-// }
-
 .places__slider {
-  margin-top: -22px;
-  margin-bottom: 30px;
+  margin-top: -11px;
+  margin-bottom: 226px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 112px;
+  }
 }
-
-// .places__figure {
-//   position: relative;
-//   margin: 0;
-//   padding: 0;
-// }
-
-
-// .places__price {
-//   width: 30%;
-// }
