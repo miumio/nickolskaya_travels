@@ -15,20 +15,14 @@
 }
 
 .price__inner {
-  // margin-left: auto;
   order: 3;
   flex: 1 1 200px;
   max-width: 286px;
-  // width: 299px;
-  // width: 20%;
-  // max-width: 300px;
 
   @media (max-width: $tablet-width) {
     margin: 0;
     min-width: 100%;
     order: 0;
-    // min-width: 728px;
-    // flex-grow: 1;
   }
 }
 
@@ -39,11 +33,6 @@
   @media (max-width: $tablet-width) {
     width: 36.666%;
   }
-
-  // &:not(:last-child) {
-  // margin-right: 30px;
-
-  // }
 
   @media (max-width: $mobile-width) {
     width: 90%;
