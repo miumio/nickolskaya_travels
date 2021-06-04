@@ -2,6 +2,8 @@
   "name": "Way",
   "version": "1.0.0",
   "description": "Grade project HTML Academy",
+  "author": "Asya Nikolskaya",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^10.2.6",
