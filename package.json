@@ -1,5 +1,5 @@
 {
-  "name": "Liga-A-start-template",
+  "name": "liga-a-start-template",
   "version": "1.0.0",
   "description": "Стартовый шаблон сборки Лиги А",
   "devDependencies": {
@@ -46,7 +46,7 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "8.15"
+    "node": "^8.15"
   },
   "dependencies": {
     "del": "^4.1.1"
