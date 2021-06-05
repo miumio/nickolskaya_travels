@@ -1,16 +1,15 @@
 {
-  "name": "Way",
+  "name": "way",
   "version": "1.0.0",
-  "description": "Grade project HTML Academy",
-  "author": "Asya Nikolskaya",
-  "license": "UNLICENSED",
+  "private": true,
+  "description": "grade project html academy",
+  "author": "asya nikolskaya",
+  "license": "unlicensed",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^10.2.6",
     "browser-sync": "2.26.x",
-    "eslint": "4.16.0",
-    "eslint-config-htmlacademy": "0.4.x",
-    "gulp": "^4.0.2",
+    "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "1.2.x",
@@ -21,14 +20,16 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
+    "postcss": "^8.2.10",
     "posthtml-include": "^1.2.0",
-    "prettier": "2.3.0",
-    "stylelint": "^9.3.0",
+    "prettier": "^2.3.1",
+    "stylelint": "^13.13.0",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
+    "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run stylelint && eslint source/js/",
+    "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp start",
     "webp": "gulp webp",
@@ -39,8 +40,16 @@
     "IE 11",
     "Firefox ESR"
   ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
+  ],
   "engines": {
-    "node": "^14.0"
+    "node": "^12.0"
   },
   "dependencies": {
     "del": "^4.1.1"
