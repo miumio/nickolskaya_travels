@@ -22,5 +22,5 @@
 @mixin wrapper {
   margin: 0 auto;
   max-width: $desktop-width;
-  width: 90%;
+  width: calc(100vw - 50px);
 }

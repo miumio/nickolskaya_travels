@@ -2,14 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-regular.woff2" as="font"> -->
     <title>Путешествие по Европе</title>
-    <link rel="stylesheet" href="/pixel-glass/styles.css" >
-    <script src="/pixel-glass/script.js"></script>
-    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
     <header class="header">
@@ -43,7 +41,8 @@
     <main>
       <section class="intro">
         <div class="intro__wrapper">
-          <div class="intro__inner"><h1 class="intro__title title">Путешествие по Европе</h1>
+          <div class="intro__inner">
+            <h1 class="intro__title title">Путешествие по Европе</h1>
             <p class="intro__text">
               В этом туре вы откроете для себя Европу в новом свете. Вас ждет:
               море, горы, а также потрясающая красота природы.
@@ -55,26 +54,81 @@
       <section class="places">
         <div class="places__wrapper">
           <h2 class="places__title title">Mеста посещения</h2>
-          <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+          <p class="places__text">
+            Вы можете выбрать полный тур или частичный, с посещением первых 3
+            мест
+          </p>
           <ul class="places__list">
             <li class="places__item">
               <a href="#greece" onclick="currentSlide(1)">
                 <picture>
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-tablet@1x.webp 1x, img/greece-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/greece-desktop@1x.webp 1x, img/greece-desktop@2x.webp 2x">
-                  <source media="(max-width: 1023px)" srcset="img/greece-tablet@1x.jpg 1x, img/greece-tablet@2x.jpg 2x">
-                  <img src="img/greece-desktop@1x.jpg" srcset="img/greece-desktop@2x.jpg 2x" class="places__image" width="350" height="430" alt="Греция">
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1023px)"
+                    srcset="
+                      img/greece-tablet@1x.webp 1x,
+                      img/greece-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/greece-desktop@1x.webp 1x,
+                      img/greece-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1023px)"
+                    srcset="
+                      img/greece-tablet@1x.jpg 1x,
+                      img/greece-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/greece-desktop@1x.jpg"
+                    srcset="img/greece-desktop@2x.jpg 2x"
+                    class="places__image"
+                    width="350"
+                    height="430"
+                    alt="Греция"
+                  />
                 </picture>
                 <span class="places__spotname">Греция</span>
               </a>
             </li>
             <li class="places__item">
-              <a href="#albania"  onclick="currentSlide(2)">
+              <a href="#albania" onclick="currentSlide(2)">
                 <picture>
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/albania-tablet@1x.webp 1x, img/albania-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/albania-desktop@1x.webp 1x, img/albania-desktop@2x.webp 2x">
-                  <source media="(max-width: 1023px)" srcset="img/albania-tablet@1x.jpg 1x, img/albania-tablet@2x.jpg 2x">
-                  <img src="img/albania-desktop@1x.jpg" srcset="img/albania-desktop@2x.jpg 2x" class="places__image" width="350" height="430" alt="Албания">
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1023px)"
+                    srcset="
+                      img/albania-tablet@1x.webp 1x,
+                      img/albania-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/albania-desktop@1x.webp 1x,
+                      img/albania-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1023px)"
+                    srcset="
+                      img/albania-tablet@1x.jpg 1x,
+                      img/albania-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/albania-desktop@1x.jpg"
+                    srcset="img/albania-desktop@2x.jpg 2x"
+                    class="places__image"
+                    width="350"
+                    height="430"
+                    alt="Албания"
+                  />
                 </picture>
                 <span class="places__spotname">Албания</span>
               </a>
@@ -82,10 +136,36 @@
             <li class="places__item">
               <a href="#makedonia" onclick="currentSlide(3)">
                 <picture>
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/makedonia-tablet@1x.webp 1x, img/makedonia-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/makedonia-desktop@1x.webp 1x, img/makedonia-desktop@2x.webp 2x">
-                  <source media="(max-width: 1023px)" srcset="img/makedonia-tablet@1x.jpg 1x, img/makedonia-tablet@2x.jpg 2x">
-                  <img src="img/makedonia-desktop@1x.jpg" srcset="img/albania-desktop@2x.jpg 2x" class="places__image" width="350" height="430" alt="Македония">
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1023px)"
+                    srcset="
+                      img/makedonia-tablet@1x.webp 1x,
+                      img/makedonia-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/makedonia-desktop@1x.webp 1x,
+                      img/makedonia-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1023px)"
+                    srcset="
+                      img/makedonia-tablet@1x.jpg 1x,
+                      img/makedonia-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/makedonia-desktop@1x.jpg"
+                    srcset="img/albania-desktop@2x.jpg 2x"
+                    class="places__image"
+                    width="350"
+                    height="430"
+                    alt="Македония"
+                  />
                 </picture>
                 <span class="places__spotname">Македония</span>
               </a>
@@ -93,27 +173,79 @@
             <li class="places__item">
               <a href="#montenegro" onclick="currentSlide(4)">
                 <picture>
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/montenegro-tablet@1x.webp 1x, img/montenegro-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/montenegro-desktop@1x.webp 1x, img/montenegro-desktop@2x.webp 2x">
-                  <source media="(max-width: 1023px)" srcset="img/montenegro-tablet@1x.jpg 1x, img/montenegro-tablet@2x.jpg 2x">
-                  <img src="img/montenegro-desktop@1x.jpg" srcset="img/montenegro-desktop@2x.jpg 2x" class="places__image" width="350" height="430" alt="Черногория">
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1023px)"
+                    srcset="
+                      img/montenegro-tablet@1x.webp 1x,
+                      img/montenegro-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/montenegro-desktop@1x.webp 1x,
+                      img/montenegro-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1023px)"
+                    srcset="
+                      img/montenegro-tablet@1x.jpg 1x,
+                      img/montenegro-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/montenegro-desktop@1x.jpg"
+                    srcset="img/montenegro-desktop@2x.jpg 2x"
+                    class="places__image"
+                    width="350"
+                    height="430"
+                    alt="Черногория"
+                  />
                 </picture>
                 <span class="places__spotname">Черногория</span>
               </a>
             </li>
             <li class="places__item">
-              <a href="#croatia"  onclick="currentSlide(5)">
+              <a href="#croatia" onclick="currentSlide(5)">
                 <picture>
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/croatia-tablet@1x.webp 1x, img/croatia-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/croatia-desktop@1x.webp 1x, img/croatia-desktop@2x.webp 2x">
-                  <source media="(max-width: 1023px)" srcset="img/croatia-tablet@1x.jpg 1x, img/croatia-tablet@2x.jpg 2x">
-                  <img src="img/croatia-desktop@1x.jpg" srcset="img/croatia-desktop@2x.jpg 2x" class="places__image" width="350" height="430" alt="Хорватия">
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1023px)"
+                    srcset="
+                      img/croatia-tablet@1x.webp 1x,
+                      img/croatia-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/croatia-desktop@1x.webp 1x,
+                      img/croatia-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1023px)"
+                    srcset="
+                      img/croatia-tablet@1x.jpg 1x,
+                      img/croatia-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/croatia-desktop@1x.jpg"
+                    srcset="img/croatia-desktop@2x.jpg 2x"
+                    class="places__image"
+                    width="350"
+                    height="430"
+                    alt="Хорватия"
+                  />
                 </picture>
                 <span class="places__spotname">Хорватия</span>
               </a>
             </li>
           </ul>
-          <section class="places__swiper swiper">
+          <!-- <section class="places__swiper swiper">
           <div class="swiper-container">
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
@@ -314,59 +446,98 @@
                 </blockquote>
               </li>
             </ul>
-          </section>
+          </section> -->
           <section class="places__price price">
             <div class="price__inner">
               <h2 class="price__title title">Цены</h2>
               <p class="price__text">
-                Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей.
-                Выберите для себя лучший вариант отпуска и отдохните на все 100%!
+                Специально для Вас мы разработали 2 пакета цен с разными
+                условиями, отталкиваясь от Ваших потребностей и возможностей.
+                Выберите для себя лучший вариант отпуска и отдохните на все
+                100%!
               </p>
               <h4 class="price__subtitle">Свяжитесь с нами</h4>
               <p class="price__phone">
                 <svg width="30" height="30">
                   <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
                 </svg>
-                +7 (499) 784-684-46</p>
+                +7 (499) 784-684-46
+              </p>
             </div>
             <section class="price__tariffs tariffs">
               <h3 class="tariffs__title">Комплексный <span>$1999</span></h3>
-              <p class="tariffs__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              <p class="tariffs__text">
+                Ознакомьтесь с перечнем того, что входит в данный пакет
+              </p>
               <ul class="tariffs__list">
-                <li class="tariffs__item">Разработанный маршрут с гидом группы</li>
-                <li class="tariffs__item">Перелет, трансфер и проживание в отелях</li>
-                <li class="tariffs__item">Завтраки, ужины в отелях и ланчи на природе</li>
-                <li class="tariffs__item">Экскурсии по удивительно красивым местам Европы</li>
+                <li class="tariffs__item">
+                  Разработанный маршрут с гидом группы
+                </li>
+                <li class="tariffs__item">
+                  Перелет, трансфер и проживание в отелях
+                </li>
+                <li class="tariffs__item">
+                  Завтраки, ужины в отелях и ланчи на природе
+                </li>
+                <li class="tariffs__item">
+                  Экскурсии по удивительно красивым местам Европы
+                </li>
               </ul>
-              <button class="tariffs__button button" type="button">Купить тур сейчас</button>
+              <button class="tariffs__button button" type="button">
+                Купить тур сейчас
+              </button>
             </section>
             <section class="price__tariffs tariffs">
               <h3 class="tariffs__title">Экономный <span>$1399</span></h3>
-              <p class="tariffs__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              <p class="tariffs__text">
+                Ознакомьтесь с перечнем того, что входит в данный пакет
+              </p>
               <ul class="tariffs__list">
-                <li class="tariffs__item">Разработанный маршрут с гидом группы</li>
+                <li class="tariffs__item">
+                  Разработанный маршрут с гидом группы
+                </li>
                 <li class="tariffs__item">Перелет и трансфер</li>
                 <li class="tariffs__item">Проживание в хостелах при отелях</li>
                 <li class="tariffs__item">Только завтраки в отелях</li>
-                <li class="tariffs__item">Экскурсии по удивительно красивым местам Европы</li>
+                <li class="tariffs__item">
+                  Экскурсии по удивительно красивым местам Европы
+                </li>
               </ul>
-              <button class="tariffs__button button" type="button">Купить тур сейчас</button>
+              <button class="tariffs__button button" type="button">
+                Купить тур сейчас
+              </button>
             </section>
           </section>
         </div>
       </section>
       <section class="feedback">
-        <div class="feedback__bg">
-        </div>
+        <div class="feedback__bg"></div>
         <div class="feedback__inner">
           <h3 class="feedback__title title">У вас остались вопросы?</h3>
           <p class="feedback__text">
             Оставьте свой номер или e-mail и мы свяжемся с Вами
           </p>
-          <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="POST">
+          <form
+            class="feedback__form form"
+            action="https://echo.htmlacademy.ru"
+            method="POST"
+          >
             <div class="form__inner">
-                <input class="form__input" id="phone" name="user-phone" type="tel" placeholder="Введите 10 цифр номера" required>
-                <input class="form__input" id="email" name="email" type="email" placeholder="E-mail">
+              <input
+                class="form__input"
+                id="phone"
+                name="user-phone"
+                type="tel"
+                placeholder="Введите 10 цифр номера"
+                required
+              />
+              <input
+                class="form__input"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="E-mail"
+              />
             </div>
             <button class="form__button button" type="submit">Отправить</button>
           </form>
@@ -375,8 +546,8 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <section class="footer__column">
-          <h4 class="footer__title title title--small">Следующие путешествия</h4>
+        <section class="footer__column footer__column--first">
+          <h4 class="footer__title title">Следующие путешествия</h4>
           <ul class="footer__list">
             <li>
               <a href="#" class="footer__link">Марсель</a>
@@ -429,23 +600,26 @@
             </li>
           </ul>
         </section>
-        <section class="footer__column">
-          <h4 class="footer__title title title--small">Наши контакты</h4>
+        <section class="footer__column footer__column--second">
+          <h4 class="footer__title title">Наши контакты</h4>
           <a href="mailto:puteshestviemechta@gmail.ru" class="footer__contacts">
             <svg width="26" height="20">
               <use xlink:href="img/sprite_auto.svg#icon-email"></use>
             </svg>
             puteshestviemechta@gmail.ru
           </a>
-          <a href="tel:+749978468446" class="footer__contacts footer__contacts--phone">
+          <a
+            href="tel:+749978468446"
+            class="footer__contacts footer__contacts--phone"
+          >
             <svg width="30" height="30">
               <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
             </svg>
-            +7 (499) 784-684-46
+            +7 (499) -784-684-46
           </a>
         </section>
-        <section class="footer__column">
-          <h4 class="footer__title title title--small">Корпоративные путешествия</h4>
+        <section class="footer__column footer__column--third">
+          <h4 class="footer__title title">Корпоративные путешествия</h4>
           <p class="footer__text">
             Также вы можете заказать индивидуальное путешествие под вашу
             компанию. Подобные туры очень сближают компанию, помогают
@@ -455,8 +629,8 @@
         </section>
       </div>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="js/swipe.js" type="module"></script>
-    <script src="js/swiper-bundle.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <!-- <script src="js/swipe.js" type="module"></script> -->
+    <!-- <script src="js/swiper-bundle.js"></script> -->
   </body>
 </html>
