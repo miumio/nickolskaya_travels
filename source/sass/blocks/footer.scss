@@ -13,11 +13,13 @@
   @include wrapper;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 25px;
+  overflow: hidden;
 }
 
 .footer__title {
   margin-bottom: 19px;
-  min-width: 290px;
+  width: 100%;
   font-size: 18px;
   line-height: 32px;
   color: $black;
@@ -25,78 +27,43 @@
 
 .footer__column {
   display: flex;
+  flex: 1 0 0;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: flex-start;
+  margin-top: -1px;
+  margin-right: 50px;
+  min-width: 291.5px;
+  border-top: 1px solid rgba($grey, 0.5);
+  border-right: 1px solid rgba($grey, 0.5);
   box-sizing: border-box;
-  width: 34.5%;
 
   &--first {
-    padding-left: 14px;
-    padding-right: 39px;
-    border-right: 1px solid rgba($grey, 0.5);
+    padding-right: 2%;
+    flex-basis: 50px;
   }
 
   &--second {
-    width: 21%;
-    min-width: 264px;
     margin-left: auto;
   }
 
   &--third {
-    position: relative;
-    margin-left: auto;
-    width: 28%;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: -15%;
-      width: 1px;
-      height: 100%;
-      background-color: rgba($grey, 0.5);
-    }
+    margin-right: -1px;
   }
 
-  // @media (max-width: $tablet-width) {
-  //   width: 50%;
-  // }
+  @media (max-width: $tablet-width) {
+    min-width: 330px;
+    margin: -1px -1px 0 0;
+    text-align: left;
+  }
+}
 
-  // @media (max-width: $mobile-width) {
-  //   width: 100%;
-  //   text-align: center;
-  //   border-right: 0;
+.footer__column-inner {
+  padding-left: 8%;
 
-  //   &:not(:first-child) {
-  //     border-top: 1px solid rgba($grey, 0.5);
-  //   }
-  // }
-
-  // &:nth-child(3n+2) {
-  //   padding-left: 90px;
-
-  //   @media (max-width: $tablet-width) {
-  //     border-right: 0;
-  //   }
-
-  //   @media (max-width: $mobile-width) {
-  //     padding-left: 10px;
-  //     border-left: none;
-  //   }
-  // }
-
-  // &:nth-child(3n) {
-  //   padding-left: 50px;
-  //   border-right: none;
-
-  //   @media (max-width: $tablet-width) {
-  //     padding-left: 10px;
-  //     margin-top: 30px;
-  //     width: 100%;
-  //     text-align: center;
-  //     border-top: 1px solid rgba($grey, 0.5);
-  //   }
-  // }
+  @media (max-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .footer__list {
@@ -105,6 +72,7 @@
 
   @media (max-width: $mobile-width) {
     flex-basis: 50%;
+    margin: 0 auto;
   }
 }
 
@@ -118,12 +86,11 @@
 
 .footer__text {
   margin: 0;
-  padding-right: 6px;
+  padding-right: 18px;
 }
 
 .footer__contacts {
   margin-bottom: 18px;
-  width: 100%;
   display: flex;
   align-items: center;
   color: $orange;
