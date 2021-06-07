@@ -10,9 +10,9 @@
 .places__wrapper {
   @include wrapper;
 
-  @media (max-width: $tablet-width) {
-    width: 100%;
-  }
+  // @media (max-width: $tablet-width) {
+  //   width: 100%;
+  // }
 }
 
 .places__title {
@@ -23,7 +23,7 @@
   letter-spacing: -1.245px;
 
   &::after {
-    @include line (-33px, 228px, 4px, $orange);
+    @include line(-33px, 228px, 4px, $orange);
   }
 
   @media (max-width: $tablet-width) {
@@ -112,7 +112,7 @@
   transform: translateX(-50%);
 }
 
-.places__swiper {
+.places__slider {
   margin-top: -11px;
   margin-bottom: 226px;
 

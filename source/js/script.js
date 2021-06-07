@@ -1,18 +1,18 @@
-'use strict';
-var navMain = document.querySelector('.site-nav');
-var navToggler = document.querySelector('.site-nav__toggler');
+"use strict";
+var navMain = document.querySelector(".site-nav");
+var navToggler = document.querySelector(".site-nav__toggler");
 
-navMain.classList.remove('site-nav--nojs');
-navMain.classList.add('site-nav--closed');
-navToggler.classList.add('site-nav__toggler--show');
+navMain.classList.remove("site-nav--nojs");
+navMain.classList.add("site-nav--closed");
+navToggler.classList.add("site-nav__toggler--show");
 
-navToggler.addEventListener('click', function () {
-  if (navMain.classList.contains('site-nav--closed')) {
-    navMain.classList.remove('site-nav--closed');
-    navMain.classList.add('site-nav--opened');
+navToggler.addEventListener("click", function () {
+  if (navMain.classList.contains("site-nav--closed")) {
+    navMain.classList.remove("site-nav--closed");
+    navMain.classList.add("site-nav--opened");
   } else {
-    navMain.classList.add('site-nav--closed');
-    navMain.classList.remove('site-nav--opened');
+    navMain.classList.add("site-nav--closed");
+    navMain.classList.remove("site-nav--opened");
   }
 });
 
@@ -20,17 +20,17 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName('swiper__item');
-  var links = document.getElementsByClassName('swiper-slide__link');
+  var slides = document.getElementsByClassName("slider__slide");
+  var links = document.getElementsByClassName("slider__link");
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -38,13 +38,13 @@ function showSlides(n) {
     slideIndex = slides.length;
   }
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
+    slides[i].style.display = "none";
   }
   for (i = 0; i < links.length; i++) {
-    links[i].className = links[i].className.replace(' swiper-slide__link--active', '');
+    links[i].className = links[i].className.replace("slider__link--active", "");
   }
-  slides[slideIndex - 1].style.display = 'flex';
-  links[slideIndex - 1].className += ' swiper-slide__link--active';
+  slides[slideIndex - 1].style.display = "flex";
+  links[slideIndex - 1].className += " slider__link--active";
 }
 
 plusSlides(1);
