@@ -1,12 +1,12 @@
 .slider__tabs {
   @include list-style-reset;
-  position: relative;
   display: flex;
   border-bottom: 1px solid rgba($black-special, 0.3);
-  overflow: hidden;
 
   @media (max-width: $tablet-width) {
-    width: 768px;
+    margin-left: 30px;
+    width: auto;
+    overflow-x: scroll;
   }
 }
 
@@ -19,7 +19,7 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 50px;
-  letter-spacing: -0.415px;
+  letter-spacing: -0.41px;
   text-align: center;
   color: rgba($black-special, 0.3);
 

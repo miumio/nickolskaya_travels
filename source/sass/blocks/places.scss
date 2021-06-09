@@ -9,10 +9,6 @@
 
 .places__wrapper {
   @include wrapper;
-
-  // @media (max-width: $tablet-width) {
-  //   width: 100%;
-  // }
 }
 
 .places__title {
@@ -20,7 +16,7 @@
   margin: 0;
   margin-bottom: 64px;
   width: 30%;
-  letter-spacing: -1.245px;
+  letter-spacing: -1.24px;
 
   &::after {
     @include line(-33px, 228px, 4px, $orange);
@@ -44,7 +40,7 @@
   margin: 0;
   margin-bottom: 55px;
   width: 30%;
-  letter-spacing: -0.466667px;
+  letter-spacing: -0.47px;
 
   @media (max-width: $tablet-width) {
     padding: 0 30%;
@@ -117,6 +113,6 @@
   margin-bottom: 226px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 112px;
+    margin: 0 calc(((100vw - 100%) / 2) * -1);
   }
 }

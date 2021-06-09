@@ -4,7 +4,6 @@
   justify-content: space-between;
   align-items: center;
 
-
   @media (max-width: $tablet-width) {
     justify-content: space-evenly;
   }
@@ -31,7 +30,7 @@
   min-width: 370px;
 
   @media (max-width: $tablet-width) {
-    width: 36.666%;
+    width: 36.67%;
   }
 
   @media (max-width: $mobile-width) {
