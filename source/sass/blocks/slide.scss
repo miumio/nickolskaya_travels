@@ -1,15 +1,21 @@
 .slide {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
+
+  // @media (max-width: $tablet-width) {
+  //   flex-direction: column;
+  // }
 }
 
 .slide__info {
-  flex: 1 0 0;
+  flex: 1 0 185px;
   margin: auto;
 }
 
 .slide__title {
   position: relative;
-  margin: 0 0 50px;
+  margin: 8px 0 53px;
   letter-spacing: -1.245px;
 
   &::after {
@@ -17,6 +23,7 @@
   }
 
   @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
     &::after {
       display: none;
     }
@@ -29,6 +36,7 @@
   letter-spacing: -0.466667px;
 
   @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
     padding: 0 15px;
   }
 }
@@ -36,40 +44,50 @@
 .slide__button {
   width: 250px;
   margin-bottom: 15px;
-  letter-spacing: 2.5px;
+  text-align: center;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 110px;
+    margin-bottom: 30px;
   }
 }
 
 .slide__img-wrapper {
-  position: relative;
-  flex: 1 0 0;
-  margin-right: -107px;
+  flex: 1 0 240px;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
+  transform: translateX(25%);
 
   img {
     width: auto;
     height: 100%;
-    object-fit: cover;
+
+    @media (max-width: $tablet-width) {
+      width: 100%;
+      // height: auto;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    flex: none;
+    margin: 0 calc(((100vw - 100%) / 2) * -1);
+    transform: translateX(0);
   }
 }
 
 .slide__review {
   flex: 0 0 382px;
   margin: auto;
-  padding: 30px;
   z-index: 10;
 
-  // @media (max-width: $tablet-width) {
-  //   position: absolute;
-  //   right: 50%;
-  //   bottom: 0;
-  //   margin: 0 auto;
-  //   width: 50%;
-  //   transform: translateX(50%);
-  // }
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    margin: 0 auto;
+    width: 50%;
+    transform: translateX(50%);
+  }
 
   // @media (max-width: $mobile-width) {
   //   width: 90%;

@@ -151,8 +151,14 @@
                   <a class="slide__button button">Купить тур сейчас</a>
                 </div>
                 <div class="slide__img-wrapper">
-                  <img src="img/greece-bg-desktop@1x.jpg" srcset="img/greece-bg-desktop@2x.jpg 2x" width="430" height="596" alt="Пейзаж Греции">
-                </div>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/greece-bg-mobile@1x.webp 1x, img/greece-bg-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-bg-tablet@1x.webp 1x, img/greece-bg-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/greece-bg-desktop@1x.webp 1x, img/greece-bg-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/greece-bg-mobile@1x.jpg 1x, img/greece-bg-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="img/greece-bg-tablet@1x.jpg 1x, img/greece-bg-tablet@2x.jpg 2x">
+                    <img src="img/greece-bg-desktop@1x.jpg" srcset="img/greece-bg-desktop@2x.jpg 2x" width="430" height="596" alt="Пейзаж Греции">
+                  </picture>                </div>
                 <blockquote class="slide__review review">
                   <h4 class="review__title title">Отзывы</h4>
                   <p class="review__text">
