@@ -117,6 +117,6 @@
   margin-bottom: 226px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 112px;
+    margin: 0 calc(((100vw - 100%) / 2) * -1);
   }
 }
