@@ -22,6 +22,8 @@
   letter-spacing: -0.41px;
   text-align: center;
   color: rgba($black-special, 0.3);
+  border: 0;
+  background-color: transparent;
 
   &--active {
     color: $orange;
@@ -38,24 +40,4 @@
 
 .slider__slide {
   margin-top: 71px;
-}
-
-.swiper-container {
-  position: relative;
-  width: 77%;
-  margin-bottom: 82px;
-  overflow: hidden;
-
-  @media (max-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (max-width: $mobile-width) {
-    width: 300px;
-  }
-}
-
-.swiper-wrapper {
-  display: flex;
-  position: relative;
 }

@@ -4,6 +4,7 @@
 
 .slide__info {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   width: 80%;
 
@@ -16,7 +17,6 @@
 .slide__text-column {
   flex: 1;
   margin-right: 30px;
-  min-width: 353px;
 
   @media (max-width: $tablet-width) {
     margin: 0;
@@ -26,7 +26,6 @@
 .slide__img-wrapper {
   flex: 1;
   overflow: hidden;
-  min-width: 354px;
 
   img {
     height: 100%;
