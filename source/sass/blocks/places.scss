@@ -39,7 +39,7 @@
 .places__text {
   margin: 0;
   margin-bottom: 55px;
-  width: 30%;
+  width: 33.33%;
   letter-spacing: -0.47px;
 
   @media (max-width: $tablet-width) {
@@ -50,9 +50,11 @@
 
 .places__list {
   @include list-style-reset;
+  margin-left: -20px;
+  margin-right: -20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 98px;
@@ -62,35 +64,19 @@
 
 .places__item {
   position: relative;
+  margin: 0;
   margin-bottom: 100px;
-  width: 30%;
-  min-width: 288px;
+  flex: 1 1 320px;
+  max-width: 36%;
+  box-sizing: border-box;
+}
 
-  &:nth-last-child(2) {
-    margin-left: auto;
-  }
-
-  &:last-child {
-    margin-right: auto;
-    margin-left: 120px;
-  }
-
-  @media (max-width: $tablet-width) {
-    margin-bottom: 30px;
-    width: 45%;
-
-    &:last-child {
-      margin: 0 auto;
-    }
-  }
-
-  @media (max-width: $mobile-width) {
-    width: 100%;
-
-    a {
-      width: 100%;
-    }
-  }
+.places__card {
+  display: block;
+  margin: 0 auto;
+  // min-width: 288px;
+  width: 30vw;
+  max-width: 350px;
 }
 
 .places__spotname {
