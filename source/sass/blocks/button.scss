@@ -1,13 +1,12 @@
 .button {
-  display: block;
-  padding: 30px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 30px 38px;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
-
-
   text-decoration: none;
   color: $white;
   background-color: $orange;
@@ -15,16 +14,18 @@
   box-sizing: border-box;
   cursor: pointer;
 
+  @media (max-width: $tablet-width) {
+    padding: 17px 40px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+
   &:hover {
     background-color: $orange-hover;
   }
 
   @media (max-width: $mobile-width) {
     width: 288px;
-  }
-
-  @media (max-width: $tablet-width) {
-    margin: 0 auto;
-    width: 250px;
   }
 }

@@ -21,6 +21,6 @@
 
 @mixin wrapper {
   margin: 0 auto;
-  max-width: $desktop-width;
+  max-width: 1210px;
   width: calc(100vw - 50px);
 }

@@ -38,6 +38,12 @@
   box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
 }
 
+.site-nav--opened {
+  @media (max-width: $tablet-width) {
+    padding: 100px 0;
+  }
+}
+
 .site-nav--opened .site-nav__toggler {
   background-color: $white;
 
@@ -78,7 +84,6 @@
   font-size: 14px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 20%;
     flex-direction: column;
     font-size: 20px;
     line-height: 140%;
@@ -93,36 +98,34 @@
     position: relative;
     margin-bottom: 20px;
 
-    &::before,
     &::after {
       @include pseudo;
+      top: 50%;
       right: 30px;
       width: 10px;
-      height: 3px;
-      background-color: $grey;
+      height: 10px;
+      border-bottom: 2px solid $grey;
+      border-right: 2px solid $grey;
+      transform: rotate(-45deg) translateY(-50%);
     }
+  }
 
-    &::before {
-      top: 47%;
-      transform: rotate(45deg);
-    }
-
+  &:hover {
     &::after {
-      top: 53%;
-      transform: rotate(-45deg);
+      border-color: $orange-hover;
+    }
+
+    & .site-nav__link {
+      color: $orange-hover;
     }
   }
 }
 
 .site-nav__link {
   display: inline-block;
-  padding: 39px 20px 33px;
+  padding: 20px;
   text-decoration: none;
   color: inherit;
-
-  &:hover {
-    color: $orange-hover;
-  }
 
   @media (max-width: $tablet-width) {
     width: 100%;

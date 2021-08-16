@@ -15,17 +15,13 @@
       color: $orange;
     }
 
-    .tariffs__item {
-      &::after,
-      &::before {
-        background-color: $black;
-      }
+    .tariffs__item::after,
+    .tariffs__item::before {
+      background-color: $black;
     }
 
-    .tariffs__text {
-      &::after {
-        background-color: rgba($orange, 0.5);
-      }
+    .tariffs__text::after {
+      background-color: rgba($orange, 0.5);
     }
   }
 

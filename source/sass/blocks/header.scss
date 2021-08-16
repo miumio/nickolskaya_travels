@@ -12,14 +12,14 @@
 
   @media (max-width: $tablet-width) {
     display: block;
+    width: auto;
   }
 }
 
 .header__logo {
   display: block;
-  margin-left: -14px;
   margin-right: auto;
-  padding: 38px 21px 30px 14px;
+  padding: 40px 20px 30px;
 
   @media (max-width: $tablet-width) {
     padding: 14px 20px 8px;
@@ -32,9 +32,11 @@
 }
 
 .header__nav {
-  padding-right: 18px;
+  margin-right: 1.75rem;
 
   @media (max-width: $tablet-width) {
+    margin: 0;
+    width: 100%;
     z-index: 10;
     background-color: $white;
   }
@@ -43,12 +45,12 @@
 .header__contacts {
   display: flex;
   align-items: center;
-  padding: 19px 14px 14px;
+  padding: 22px;
   font-size: 18px;
   color: inherit;
 
   svg {
-    margin-right: 9px;
+    margin-right: 1rem;
     fill: none;
     stroke: $black;
   }
