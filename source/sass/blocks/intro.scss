@@ -1,11 +1,21 @@
 .intro {
+  margin-bottom: 12.5rem;
   padding: 0 calc(50vw - 36.5rem);
   color: $white;
   min-height: 860px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 5rem;
+    min-height: 344px;
+  }
 }
 
 .intro__img {
   margin: 0 calc(((100vw - 100%) / 2) * -1);
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+  }
 }
 
 .intro__img img {

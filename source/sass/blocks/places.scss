@@ -4,61 +4,76 @@
   background-image: url("../img/places-bg.svg");
   background-repeat: no-repeat;
   background-size: 1444px auto;
-  background-position: bottom 403px center;
+  background-position: bottom center;
+
+  @media (max-width: $tablet-width) {
+    background-image: none;
+  }
 }
 
 .places__wrapper {
   @include wrapper;
+
+  max-width: 1228px;
+
+  @media (max-width: $mobile-width) {
+    max-width: 500px;
+  }
 }
 
 .places__title {
   position: relative;
-  margin: 0;
-  margin-bottom: 64px;
+  margin: 0 0 4rem 1.81rem;
+  padding: 0;
   width: 30%;
-  letter-spacing: -1.24px;
 
   &::after {
     @include line(-33px, 228px, 4px, $orange);
   }
 
   @media (max-width: $tablet-width) {
-    padding: 0 30%;
+    margin-bottom: 1.4rem;
+    margin-left: 0;
     width: auto;
 
     &::after {
       display: none;
     }
   }
-
-  @media (max-width: $mobile-width) {
-    padding: 0 15px;
-  }
 }
 
 .places__text {
   margin: 0;
   margin-bottom: 55px;
-  width: 33.33%;
+  margin-left: 1.81rem;
+  width: 27%;
   letter-spacing: -0.47px;
 
   @media (max-width: $tablet-width) {
-    padding: 0 30%;
+    margin-bottom: 2.37rem;
+    margin-left: 0;
+    padding: 0 24%;
     width: auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 1.12rem;
+    padding: 0;
   }
 }
 
 .places__list {
   @include list-style-reset;
-  margin-left: -20px;
-  margin-right: -20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 98px;
-    padding: 0 7%;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: block;
   }
 }
 
@@ -67,24 +82,43 @@
   margin: 0;
   margin-bottom: 100px;
   flex: 1 1 320px;
-  max-width: 36%;
+  max-width: 38.5%;
   box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 2.56rem;
+    max-width: 46%;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 2.18rem;
+    max-width: none;
+  }
 }
 
 .places__card {
   display: block;
   margin: 0 auto;
-  // min-width: 288px;
   width: 30vw;
   max-width: 350px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 383px;
+    width: 37.5vw;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: none;
+    width: auto;
+  }
 }
 
 .places__spotname {
   position: absolute;
   bottom: 0;
   left: 50%;
-  min-width: 215px;
-  padding: 16px 0;
+  min-width: 185px;
+  padding: 1rem;
   font-size: 24px;
   line-height: 29px;
   font-weight: 500;

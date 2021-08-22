@@ -1,17 +1,17 @@
 .title {
   margin: 0;
-  font-size: 55px;
+  font-size: 3.44rem;
   line-height: 80px;
   font-weight: 600;
   color: $black-special;
 
-  @media (max-width: $mobile-width) {
-    font-size: 24px;
-  }
-
   @media (max-width: $tablet-width) {
-    font-size: 30px;
+    font-size: 1.87rem;
     line-height: 150%;
     text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 1.5rem;
   }
 }
