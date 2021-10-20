@@ -2,17 +2,18 @@
   @include list-style-reset;
   display: flex;
   border-bottom: 1px solid rgba($black-special, 0.3);
+  width: 80%;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 
   @media (max-width: $tablet-width) {
     margin-left: 30px;
     width: auto;
-    overflow-x: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-      width: 0;
-    }
   }
 }
 

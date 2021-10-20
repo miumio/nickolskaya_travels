@@ -1,5 +1,10 @@
 .slide {
   position: relative;
+  display: none;
+
+  &--active {
+    display: block;
+  }
 }
 
 .slide__info {

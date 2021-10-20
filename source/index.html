@@ -122,27 +122,27 @@
               </a>
             </li>
           </ul>
-          <!-- <section class="places__slider slider">
+          <section class="places__slider slider">
             <ul class="slider__tabs">
               <li class="slider__tab">
-                <button class="slider__link slider__link--active" onclick="currentSlide(1)" id="greece">Греция</button>
+                <button class="slider__link slider__link--active" id="greece">Греция</button>
               </li>
               <li class="slider__tab">
-                <button class="slider__link" onclick="currentSlide(2)" id="albania">Албания</button>
+                <button class="slider__link" id="albania">Албания</button>
               </li>
               <li class="slider__tab">
-                <button class="slider__link" onclick="currentSlide(3)" id="makedonia">Македония</button>
+                <button class="slider__link" id="makedonia">Македония</button>
               </li>
               <li class="slider__tab">
-                <button class="slider__link" onclick="currentSlide(4)" id="montenegro">Черногория</button>
+                <button class="slider__link" id="montenegro">Черногория</button>
               </li>
               <li class="slider__tab">
-                <button class="slider__link" onclick="currentSlide(5)" id="croatia">Хорватия</button>
+                <button class="slider__link" id="croatia">Хорватия</button>
               </li>
             </ul>
             <h2 class="visually-hidden">Описание туров</h2>
             <ul class="slider__list">
-              <li class="slider__slide slide">
+              <li class="slider__slide slide slide--active">
                 <div class="slide__info">
                   <div class="slide__text-column">
                     <h3 class="slide__title title">Греция</h3>
@@ -160,12 +160,12 @@
                   </div>
                   <div class="slide__img-wrapper">
                     <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/greece-bg-mobile@1x.webp 1x, img/greece-bg-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-bg-tablet@1x.webp 1x, img/greece-bg-tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="img/greece-bg-desktop@1x.webp 1x, img/greece-bg-desktop@2x.webp 2x">
-                      <source media="(max-width: 767px)" srcset="img/greece-bg-mobile@1x.jpg 1x, img/greece-bg-mobile@2x.jpg 2x">
-                      <source media="(max-width: 1023px)" srcset="img/greece-bg-tablet@1x.jpg 1x, img/greece-bg-tablet@2x.jpg 2x">
-                      <img src="img/greece-bg-desktop@1x.jpg" srcset="img/greece-bg-desktop@2x.jpg 2x" width="430" height="596" alt="Пейзаж Греции">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/slider-greece-mobile@1x.webp 1x, img/slider-greece-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/slider-greece-tablet@1x.webp 1x, img/slider-greece-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/slider-greece-desktop@1x.webp 1x, img/slider-greece-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/slider-greece@1x.jpg 1x, img/slider-greece-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/slider-greece-tablet@1x.jpg 1x, img/slider-greece-tablet@2x.jpg 2x">
+                      <img src="img/slider-greece-desktop@1x.jpg" srcset="img/slider-greece-desktop@2x.jpg 2x" width="430" height="596" alt="Пейзаж Греции">
                     </picture>
                   </div>
                 </div>
@@ -202,12 +202,12 @@
                   </div>
                   <div class="slide__img-wrapper">
                     <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/albania-bg-mobile@1x.webp 1x, img/albania-bg-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/albania-bg-tablet@1x.webp 1x, img/albania-bg-tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="img/albania-bg-desktop@1x.webp 1x, img/albania-bg-desktop@2x.webp 2x">
-                      <source media="(max-width: 767px)" srcset="img/albania-bg-mobile@1x.jpg 1x, img/albania-bg-mobile@2x.jpg 2x">
-                      <source media="(max-width: 1023px)" srcset="img/albania-bg-tablet@1x.jpg 1x, img/albania-bg-tablet@2x.jpg 2x">
-                      <img src="img/albania-bg-desktop@1x.jpg" srcset="img/albania-bg-desktop@2x.jpg 2x" width="430" height="596" alt="Пейзаж Албании">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/slider-albania-mobile@1x.webp 1x, img/slider-albania-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/slider-albania-tablet@1x.webp 1x, img/slider-albania-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/slider-albania-desktop@1x.webp 1x, img/slider-albania-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/slider-albania-mobile@1x.jpg 1x, img/slider-albania-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/slider-albania-tablet@1x.jpg 1x, img/slider-albania-tablet@2x.jpg 2x">
+                      <img src="img/slider-albania-desktop@1x.jpg" srcset="img/slider-albania-desktop@2x.jpg 2x" width="430" height="596" alt="Пейзаж Албании">
                     </picture>
                   </div>
                 </div>
@@ -242,12 +242,12 @@
                   </div>
                   <div class="slide__img-wrapper">
                     <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/makedonia-bg-mobile@1x.webp 1x, img/makedonia-bg-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/makedonia-bg-tablet@1x.webp 1x, img/makedonia-bg-tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="img/makedonia-bg-desktop@1x.webp 1x, img/makedonia-bg-desktop@2x.webp 2x">
-                      <source media="(max-width: 767px)" srcset="img/makedonia-bg-mobile@1x.jpg 1x, img/makedonia-bg-mobile@2x.jpg 2x">
-                      <source media="(max-width: 1023px)" srcset="img/makedonia-bg-tablet@1x.jpg 1x, img/makedonia-bg-tablet@2x.jpg 2x">
-                      <img src="img/makedonia-bg-desktop@1x.jpg" srcset="img/makedonia-bg-desktop@2x.jpg 2x" width="430" height="596" alt="Пейзаж Македонии">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/slider-makedonia-mobile@1x.webp 1x, img/slider-makedonia-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/slider-makedonia-tablet@1x.webp 1x, img/slider-makedonia-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/slider-makedonia-desktop@1x.webp 1x, img/slider-makedonia-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/slider-makedonia-mobile@1x.jpg 1x, img/slider-makedonia-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/slider-makedonia-tablet@1x.jpg 1x, img/slider-makedonia-tablet@2x.jpg 2x">
+                      <img src="img/slider-makedonia-desktop@1x.jpg" srcset="img/slider-makedonia-desktop@2x.jpg 2x" width="430" height="596" alt="Пейзаж Македонии">
                     </picture>
                   </div>
                 </div>
@@ -282,12 +282,12 @@
                   </div>
                   <div class="slide__img-wrapper">
                     <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/montenegro-bg-mobile@1x.webp 1x, img/montenegro-bg-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/montenegro-bg-tablet@1x.webp 1x, img/montenegro-bg-tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="img/montenegro-bg-desktop@1x.webp 1x, img/montenegro-bg-desktop@2x.webp 2x">
-                      <source media="(max-width: 767px)" srcset="img/montenegro-bg-mobile@1x.jpg 1x, img/montenegro-bg-mobile@2x.jpg 2x">
-                      <source media="(max-width: 1023px)" srcset="img/montenegro-bg-tablet@1x.jpg 1x, img/montenegro-bg-tablet@2x.jpg 2x">
-                      <img src="img/montenegro-bg-desktop@1x.jpg" srcset="img/montenegro-bg-desktop@2x.jpg 2x" width="430" height="596" alt="Пейзаж Черногории">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/slider-montenegromobile@1x.webp 1x, img/slider-montenegro-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/slider-montenegro-tablet@1x.webp 1x, img/slider-montenegro-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/slider-montenegro-desktop@1x.webp 1x, img/slider-montenegro-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/slider-montenegro-mobile@1x.jpg 1x, img/slider-montenegro-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/slider-montenegro-tablet@1x.jpg 1x, img/slider-montenegro-tablet@2x.jpg 2x">
+                      <img src="img/slider-montenegro-desktop@1x.jpg" srcset="img/slider-montenegro-desktop@2x.jpg 2x" width="430" height="596" alt="Пейзаж Черногории">
                     </picture>
                   </div>
                 </div>
@@ -321,12 +321,12 @@
                   </div>
                   <div class="slide__img-wrapper">
                     <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/croatia-bg-mobile@1x.webp 1x, img/croatia-bg-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/croatia-bg-tablet@1x.webp 1x, img/croatia-bg-tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="img/croatia-bg-desktop@1x.webp 1x, img/croatia-bg-desktop@2x.webp 2x">
-                      <source media="(max-width: 767px)" srcset="img/croatia-bg-mobile@1x.jpg 1x, img/croatia-bg-mobile@2x.jpg 2x">
-                      <source media="(max-width: 1023px)" srcset="img/croatia-bg-tablet@1x.jpg 1x, img/croatia-bg-tablet@2x.jpg 2x">
-                      <img src="img/croatia-bg-desktop@1x.jpg" srcset="img/croatia-bg-desktop@2x.jpg 2x" width="430" height="596" alt="Пейзаж Хорватии">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/slider-croatia-mobile@1x.webp 1x, img/slider-croatia-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/slider-croatia-tablet@1x.webp 1x, img/slider-croatia-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/slider-croatia-desktop@1x.webp 1x, img/slider-croatia-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/slider-croatia-mobile@1x.jpg 1x, img/slider-croatia-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/slider-croatia-tablet@1x.jpg 1x, img/slider-croatia-tablet@2x.jpg 2x">
+                      <img src="img/slider-croatia-desktop@1x.jpg" srcset="img/slider-croatia-desktop@2x.jpg 2x" width="430" height="596" alt="Пейзаж Хорватии">
                     </picture>
                     </div>
                 </div>
@@ -347,7 +347,7 @@
                   </cite>
                   </blockquote>
               </li>
-            </ul> -->
+            </ul>
           </section>
           <!-- <section class="places__price price">
             <div class="price__inner">
