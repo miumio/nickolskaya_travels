@@ -2,13 +2,21 @@
   "name": "way",
   "version": "1.0.0",
   "description": "grade project html academy",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:miumio/nickolskaya-travel.git"
+  },
   "author": "asya nikolskaya",
-  "license": "unlicensed",
+  "license": "MIT",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^10.2.6",
     "browser-sync": "2.26.x",
+    "eslint": "7.18.0",
+    "eslint-config-htmlacademy": "2.0.0",
+    "concat": "^1.0.3",
     "gulp": "4.0.x",
+    "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "7.1.0",
     "gulp-plumber": "1.2.x",
@@ -28,7 +36,7 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint",
+    "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
     "build": "gulp build",
     "start": "gulp start",
     "webp": "gulp webp",
